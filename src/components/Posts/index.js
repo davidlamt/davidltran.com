@@ -1,11 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+import PostListing from '../PostListing';
 
 const PostsSection = styled.div`
   margin-bottom: 2rem;
 
-  span {
+  span.header {
     font-weight: bold;
     font-size: 2.25rem;
     line-height: 1.1;
@@ -26,26 +29,45 @@ const PostsSection = styled.div`
   }
 `;
 
-const Posts = () => (
+const Posts = ({ posts }) => (
   <PostsSection>
-    <span>
+    <span className="header">
       <Link to="/archives">Writing</Link>
     </span>
     <ul>
-      <li>
-        <a href="https://antfinder.herokuapp.com/">AntFinder</a>
-      </li>
-      <li>
-        <a href="https://antfinder.herokuapp.com/">AntFinder</a>
-      </li>
-      <li>
-        <a href="https://antfinder.herokuapp.com/">AntFinder</a>
-      </li>
-      <li>
-        <a href="https://antfinder.herokuapp.com/">AntFinder</a>
-      </li>
+      {posts.map(({ node: post }) => (
+        <PostListing key={post.id} title={post.frontmatter.title} date={post.frontmatter.date} />
+      ))}
     </ul>
   </PostsSection>
 );
+
+Posts.propTypes = {
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          date: PropTypes.string.isRequired,
+        }),
+      }),
+    })
+  ),
+};
+
+Posts.defaultProps = {
+  posts: [
+    {
+      node: {
+        id: 'Default',
+        frontmatter: {
+          title: 'Default Title',
+          date: '1970-01-01',
+        },
+      },
+    },
+  ],
+};
 
 export default Posts;

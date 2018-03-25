@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const IntroductionSection = styled.div`
+  margin-bottom: 3rem;
   .svg {
     border-bottom: none;
 
