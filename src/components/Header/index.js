@@ -12,8 +12,15 @@ const HeaderContainer = styled.div`
   max-width: 40rem;
   padding: 1.45rem 1.0875rem 0 1.0875rem;
 
-  h1 {
+  span {
     margin: 0;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+      Helvetica Neue, sans-serif;
+    text-rendering: optimizeLegibility;
 
     a {
       color: #333;
@@ -58,9 +65,9 @@ const MainNavigation = styled.nav`
 const Header = () => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1>
+      <span>
         <Link to="/">David Tran</Link>
-      </h1>
+      </span>
       <MainNavigation>
         <ul>
           <li>
