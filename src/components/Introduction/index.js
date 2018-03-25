@@ -7,7 +7,7 @@ const IntroductionSection = styled.div`
     border-bottom: none;
 
     &:hover {
-      fill: #55efc4;
+      fill: #fdcb6e;
     }
   }
 `;
