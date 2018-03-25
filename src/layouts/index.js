@@ -3,10 +3,17 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './index.css';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div
+    style={{
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+    }}
+  >
     <Helmet
       title="David Tran"
       meta={[
@@ -21,10 +28,12 @@ const TemplateWrapper = ({ children }) => (
         maxWidth: '40rem',
         padding: '0px 1.0875rem 1.45rem',
         paddingTop: 0,
+        flex: 1,
       }}
     >
       {children()}
     </div>
+    <Footer />
   </div>
 );
 

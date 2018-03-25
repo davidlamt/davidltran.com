@@ -2,32 +2,16 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-const HeaderWrapper = styled.div`
+const FooterWrapper = styled.div`
   background: #fff;
-  margin-top: 2rem;
+  margin: 2rem 0 1.45rem 0;
+  flex-shrink: 0;
 `;
 
-const HeaderContainer = styled.div`
+const FooterContainer = styled.div`
   margin: 0 auto;
   max-width: 40rem;
   padding: 1.45rem 1.0875rem 0 1.0875rem;
-
-  span {
-    margin: 0;
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 1.1;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    text-rendering: optimizeLegibility;
-
-    a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: none;
-    }
-  }
 `;
 
 const MainNavigation = styled.nav`
@@ -62,12 +46,10 @@ const MainNavigation = styled.nav`
   }
 `;
 
-const Header = () => (
-  <HeaderWrapper>
-    <HeaderContainer>
-      <span>
-        <Link to="/">David Tran</Link>
-      </span>
+const Footer = () => (
+  <FooterWrapper>
+    <FooterContainer>
+      <p>Copyright 2017 - 2018 David Tran</p>
       <MainNavigation>
         <ul>
           <li>
@@ -81,8 +63,8 @@ const Header = () => (
           </li>
         </ul>
       </MainNavigation>
-    </HeaderContainer>
-  </HeaderWrapper>
+    </FooterContainer>
+  </FooterWrapper>
 );
 
-export default Header;
+export default Footer;
