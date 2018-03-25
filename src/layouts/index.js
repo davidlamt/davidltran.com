@@ -9,7 +9,10 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="David Tran"
-      meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
+      meta={[
+        { name: 'description', content: 'David Tran Personal Site' },
+        { name: 'keywords', content: 'Software Development, Personal Thoughts, Offline Adventures' },
+      ]}
     />
     <Header />
     <div
