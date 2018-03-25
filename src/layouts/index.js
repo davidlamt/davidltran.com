@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="David Tran"
       meta={[
-        { name: 'description', content: 'David Tran Personal Site' },
+        { name: 'description', content: "David Tran's Personal Site" },
         { name: 'keywords', content: 'Software Development, Personal Thoughts, Offline Adventures' },
       ]}
     />
