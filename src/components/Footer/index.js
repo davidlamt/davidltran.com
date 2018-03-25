@@ -2,48 +2,34 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-const HeaderWrapper = styled.div`
+const FooterWrapper = styled.div`
   background: #fff;
-  margin-top: 2rem;
+  margin: 1.45rem 0 0 0;
+  flex-shrink: 0;
 `;
 
-const HeaderContainer = styled.div`
+const FooterContainer = styled.div`
   margin: 0 auto;
-  max-width: 40rem;
+  max-width: 45rem;
   padding: 1.45rem 1.0875rem 0 1.0875rem;
-
-  span {
-    margin: 0;
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 1.1;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    text-rendering: optimizeLegibility;
-
-    a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: none;
-    }
-  }
+  color: #aaa;
+  font-size: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 const MainNavigation = styled.nav`
-  margin-top: 1rem;
-
   ul {
     margin-left: 1px;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
 
     li {
       margin-right: 15px;
       padding-right: 15px;
-      border-right: 1px dotted #0984e3;
+      border-right: 1px solid #aaa;
 
       &:last-child {
         border-right: none;
@@ -51,23 +37,22 @@ const MainNavigation = styled.nav`
 
       a {
         text-decoration: none;
-        color: #0984e3;
+        color: #aaa;
         border-bottom: none;
 
         &:hover {
-          border-bottom: 1px solid #0984e3;
+          color: #333;
+          border-bottom: 1px solid #333;
         }
       }
     }
   }
 `;
 
-const Header = () => (
-  <HeaderWrapper>
-    <HeaderContainer>
-      <span>
-        <Link to="/">David Tran</Link>
-      </span>
+const Footer = () => (
+  <FooterWrapper>
+    <FooterContainer>
+      <p>Copyright © 2017 - {new Date().getFullYear()} David Tran</p>
       <MainNavigation>
         <ul>
           <li>
@@ -81,8 +66,8 @@ const Header = () => (
           </li>
         </ul>
       </MainNavigation>
-    </HeaderContainer>
-  </HeaderWrapper>
+    </FooterContainer>
+  </FooterWrapper>
 );
 
-export default Header;
+export default Footer;
