@@ -12,8 +12,7 @@ const ProjectsSection = styled.div`
     color: #0984e3;
 
     a {
-      color: #333;
-      text-decoration: none;
+      color: inherit;
       border-bottom: none;
     }
   }
@@ -26,7 +25,9 @@ const ProjectsSection = styled.div`
 
 const Projects = () => (
   <ProjectsSection>
-    <span>Projects</span>
+    <span>
+      <a href="https://github.com/davidlamt">Projects</a>
+    </span>
     <ul>
       <li>
         <a href="https://antfinder.herokuapp.com/">AntFinder</a>: An organized marketplace for UCI students to advertise
