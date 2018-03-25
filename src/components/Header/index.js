@@ -22,12 +22,56 @@ const HeaderContainer = styled.div`
   }
 `;
 
+const MainNavigation = styled.nav`
+  margin-top: 1rem;
+
+  ul {
+    margin-left: 1px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    li {
+      margin-right: 15px;
+      padding-right: 15px;
+      border-right: 1px dotted #0984e3;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0984e3;
+
+        &:hover {
+          border-bottom: 1px solid #0984e3;
+        }
+      }
+    }
+  }
+`;
+
 const Header = () => (
   <HeaderWrapper>
     <HeaderContainer>
       <h1>
         <Link to="/">David Tran</Link>
       </h1>
+      <MainNavigation>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/archives">Writing</Link>
+          </li>
+          <li>
+            <a href="https://github.com/davidlamt">Projects</a>
+          </li>
+        </ul>
+      </MainNavigation>
     </HeaderContainer>
   </HeaderWrapper>
 );
