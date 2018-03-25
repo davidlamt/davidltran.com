@@ -18,6 +18,7 @@ const HeaderContainer = styled.div`
     a {
       color: #333;
       text-decoration: none;
+      border-bottom: none;
     }
   }
 `;
@@ -44,6 +45,7 @@ const MainNavigation = styled.nav`
       a {
         text-decoration: none;
         color: #0984e3;
+        border-bottom: none;
 
         &:hover {
           border-bottom: 1px solid #0984e3;
