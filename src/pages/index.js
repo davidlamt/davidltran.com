@@ -10,7 +10,7 @@ const IndexPage = () => (
       secure communication platform for the healthcare industry.
     </p>
 
-    <p>My current weapons of choice include JavaScript, React, and GatsbyJS.</p>
+    <p>My current weapons of choice include JavaScript, React, and Gatsby.</p>
 
     <p>Check out what I am up to on GitHub and Instagram.</p>
   </div>
