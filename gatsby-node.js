@@ -68,8 +68,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
       });
 
+      // Eliminate duplicate tags
       tags = _.uniq(tags);
 
+      // Create tag pages
       tags.forEach(tag => {
         createPage({
           path: `tags/${_.kebabCase(tag)}`,
