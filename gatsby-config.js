@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -17,10 +18,16 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-prismjs',
-            optinos: {
+            options: {
               classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
             },
           },
         ],
