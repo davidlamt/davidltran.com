@@ -37,7 +37,14 @@ const Posts = ({ posts, numberOfPostsToShow }) => (
     <ul>
       {posts.map(({ node: post }, index) => {
         if (index < numberOfPostsToShow) {
-          return <PostListing key={post.id} title={post.frontmatter.title} date={post.frontmatter.date} />;
+          return (
+            <PostListing
+              key={post.id}
+              slug={post.fields.slug}
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
+            />
+          );
         }
 
         return null;
