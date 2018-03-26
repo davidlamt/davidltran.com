@@ -3,10 +3,14 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const PostContainer = styled.div``;
+const PostContainer = styled.div`
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+`;
 
 const PostMeta = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-direction: row;
 
@@ -56,13 +60,11 @@ export default class PostPage extends Component {
     },
   };
 
-  generateTag(tag) {
-    return (
-      <li>
-        <Link to={`/tags/${tag}`}>#{tag}</Link>
-      </li>
-    );
-  }
+  generateTag = tag => (
+    <li>
+      <Link to={`/tags/${tag}`}>#{tag}</Link>
+    </li>
+  );
 
   render() {
     const { data } = this.props;
