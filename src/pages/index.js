@@ -20,6 +20,9 @@ IndexPage.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             id: PropTypes.string,
+            fields: PropTypes.shape({
+              slug: PropTypes.string,
+            }),
             frontmatter: PropTypes.shape({
               title: PropTypes.string,
               date: PropTypes.string,
@@ -38,6 +41,9 @@ IndexPage.defaultProps = {
         {
           node: {
             id: 'Default',
+            fields: {
+              slug: '/default/',
+            },
             frontmatter: {
               title: 'Default Title',
               date: '1970-01-01',
@@ -57,6 +63,9 @@ export const query = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             date

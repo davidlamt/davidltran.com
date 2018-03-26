@@ -10,19 +10,21 @@ const PostListingContainer = styled.li`
   }
 `;
 
-const PostListing = ({ title, date }) => (
+const PostListing = ({ slug, title, date }) => (
   <PostListingContainer>
     <span>{date}</span>
-    <Link to="/">{title}</Link>
+    <Link to={slug}>{title}</Link>
   </PostListingContainer>
 );
 
 PostListing.propTypes = {
+  slug: PropTypes.string,
   title: PropTypes.string,
   date: PropTypes.string,
 };
 
 PostListing.defaultProps = {
+  slug: '/default/',
   title: 'Default Title',
   date: '1970-01-01',
 };
