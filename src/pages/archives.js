@@ -8,7 +8,10 @@ import PostListing from '../components/PostListing';
 const ArchivesPage = styled.div`
   ul {
     list-style: none;
-    margin: 0;
+  }
+
+  .group {
+    margin-bottom: 3rem;
   }
 `;
 
@@ -65,7 +68,7 @@ export default class Archives extends Component {
       <ArchivesPage>
         <h1>Archives</h1>
         {_.map(years, year => (
-          <div key={year}>
+          <div className="group" key={year}>
             <h2>{year}</h2>
             <ul>
               {groups[year].map(({ node: post }) => (
