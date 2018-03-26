@@ -7,6 +7,10 @@ const PostContainer = styled.div`
   h1 {
     margin-bottom: 0.5rem;
   }
+
+  a.gatsby-resp-image-link {
+    border-bottom: none;
+  }
 `;
 
 const PostMeta = styled.div`
