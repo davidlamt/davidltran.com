@@ -34,6 +34,7 @@ const PostMeta = styled.div`
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     li {
       margin: 0 0.5rem 0 0;

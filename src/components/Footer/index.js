@@ -16,6 +16,7 @@ const FooterContainer = styled.div`
   font-size: 80%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
 
