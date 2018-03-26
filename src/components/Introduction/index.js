@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const IntroductionSection = styled.div`
+  margin-bottom: 3rem;
   .svg {
     border-bottom: none;
 
     &:hover {
-      fill: #55efc4;
+      fill: #fdcb6e;
     }
   }
 `;
