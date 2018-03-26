@@ -17,8 +17,14 @@ const Introduction = () => (
     <p>Hi there, I'm David.</p>
 
     <p>
-      I am currently tackling problems as a Web Developer at <a href="https://www.tigertext.com/">TigerConnect</a>, a
-      secure communication platform for the healthcare industry.
+      I am currently tackling interesting front-end problems as a Web Developer at{' '}
+      <a href="https://www.tigertext.com/">TigerConnect</a>, a company developing secure communication platforms for the
+      healthcare industry.
+    </p>
+
+    <p>
+      When I am not glued to a computer screen, you can find me enjoying food, exercising, reading, and traveling. I am
+      a lifelong learner, an avid podcast listener, and an enthusiast of books of all genres.
     </p>
 
     <p>My current weapons of choice include JavaScript, React, and Gatsby.</p>
