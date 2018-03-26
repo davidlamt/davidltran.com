@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 
 import PostListing from '../PostListing';
@@ -7,7 +8,10 @@ import PostListing from '../PostListing';
 const TagPage = styled.div`
   ul {
     list-style: none;
-    margin: 0;
+  }
+
+  .group {
+    margin-bottom: 3rem;
   }
 `;
 
@@ -62,6 +66,7 @@ export default class Tag extends Component {
 
   capitalize = tag =>
     tag
+      .replace(/-/g, ' ')
       .split(' ')
       .map(word => word[0].toUpperCase() + word.slice(1))
       .join(' ');
@@ -69,19 +74,27 @@ export default class Tag extends Component {
   render() {
     const { data } = this.props;
 
+    const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
+    const years = Object.keys(groups).sort((a, b) => b - a);
+
     return (
       <TagPage>
         <h1>{this.capitalize(this.props.pathContext.tag)}</h1>
-        <ul>
-          {data.allMarkdownRemark.edges.map(({ node: post }) => (
-            <PostListing
-              key={post.id}
-              slug={post.fields.slug}
-              title={post.frontmatter.title}
-              date={post.frontmatter.date}
-            />
-          ))}
-        </ul>
+        {_.map(years, year => (
+          <div className="group" key={year}>
+            <h2>{year}</h2>
+            <ul>
+              {groups[year].map(({ node: post }) => (
+                <PostListing
+                  key={post.id}
+                  slug={post.fields.slug}
+                  title={post.frontmatter.title}
+                  date={post.frontmatter.date}
+                />
+              ))}
+            </ul>
+          </div>
+        ))}
       </TagPage>
     );
   }
@@ -95,6 +108,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
           fields {
             slug
           }
