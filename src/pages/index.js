@@ -8,7 +8,7 @@ import Posts from '../components/Posts';
 const IndexPage = ({ data }) => (
   <div>
     <Introduction />
-    <Posts posts={data.allMarkdownRemark.edges} />
+    <Posts numberOfPostsToShow={5} posts={data.allMarkdownRemark.edges} />
     <Projects />
   </div>
 );

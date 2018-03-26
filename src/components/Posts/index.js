@@ -29,15 +29,19 @@ const PostsSection = styled.div`
   }
 `;
 
-const Posts = ({ posts }) => (
+const Posts = ({ posts, numberOfPostsToShow }) => (
   <PostsSection>
     <span className="header">
       <Link to="/archives">Writing</Link>
     </span>
     <ul>
-      {posts.map(({ node: post }) => (
-        <PostListing key={post.id} title={post.frontmatter.title} date={post.frontmatter.date} />
-      ))}
+      {posts.map(({ node: post }, index) => {
+        if (index < numberOfPostsToShow) {
+          return <PostListing key={post.id} title={post.frontmatter.title} date={post.frontmatter.date} />;
+        }
+
+        return null;
+      })}
     </ul>
   </PostsSection>
 );
@@ -54,6 +58,7 @@ Posts.propTypes = {
       }),
     })
   ),
+  numberOfPostsToShow: PropTypes.number,
 };
 
 Posts.defaultProps = {
@@ -68,6 +73,7 @@ Posts.defaultProps = {
       },
     },
   ],
+  numberOfPostsToShow: 5,
 };
 
 export default Posts;
