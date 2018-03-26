@@ -43,6 +43,8 @@ const Introduction = () => (
         </svg>.
       </a>
     </p>
+
+    <p>All thoughts and opinions expressed are my own.</p>
   </IntroductionSection>
 );
 
