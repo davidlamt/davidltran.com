@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -8,14 +9,21 @@ import './index.css';
 
 require('prismjs/themes/prism.css');
 
+const HomeContainer = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0px 1.0875rem 1.45rem;
+  flex: 1;
+`;
+
 const TemplateWrapper = ({ children }) => (
-  <div
-    style={{
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-    }}
-  >
+  <HomeContainer>
     <Helmet
       title="David Tran"
       meta={[
@@ -24,19 +32,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: '40rem',
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-        flex: 1,
-      }}
-    >
-      {children()}
-    </div>
+    <Content>{children()}</Content>
     <Footer />
-  </div>
+  </HomeContainer>
 );
 
 TemplateWrapper.propTypes = {
