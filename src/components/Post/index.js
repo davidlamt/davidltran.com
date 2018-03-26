@@ -61,7 +61,7 @@ export default class PostPage extends Component {
   };
 
   generateTag = tag => (
-    <li>
+    <li key={tag}>
       <Link to={`/tags/${tag}`}>#{tag}</Link>
     </li>
   );
