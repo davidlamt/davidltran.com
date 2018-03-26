@@ -58,28 +58,12 @@ export default class Archives extends Component {
   render() {
     const { data } = this.props;
 
-    const { edges } = data.allMarkdownRemark;
-
-    const groups = _.groupBy(edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
-
+    const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
     const years = Object.keys(groups).sort((a, b) => b - a);
-
-    console.log(years);
-    console.log(groups);
 
     return (
       <ArchivesPage>
         <h1>Archives</h1>
-        {/* <ul>
-          {data.allMarkdownRemark.edges.map(({ node: post }) => (
-            <PostListing
-              key={post.id}
-              slug={post.fields.slug}
-              title={post.frontmatter.title}
-              date={post.frontmatter.date}
-            />
-          ))}
-        </ul> */}
         {_.map(years, year => (
           <div key={year}>
             <h2>{year}</h2>
