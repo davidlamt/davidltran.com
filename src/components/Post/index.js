@@ -96,7 +96,7 @@ export default class PostPage extends Component {
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query BlogPostQuery($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
