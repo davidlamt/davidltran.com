@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
 import PostListing from '../components/PostListing';
 
 const ArchivesPage = styled.div`
   ul {
     list-style: none;
-    margin: 0;
+  }
+
+  .group {
+    margin-bottom: 3rem;
   }
 `;
 
@@ -57,19 +61,27 @@ export default class Archives extends Component {
   render() {
     const { data } = this.props;
 
+    const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
+    const years = Object.keys(groups).sort((a, b) => b - a);
+
     return (
       <ArchivesPage>
         <h1>Archives</h1>
-        <ul>
-          {data.allMarkdownRemark.edges.map(({ node: post }) => (
-            <PostListing
-              key={post.id}
-              slug={post.fields.slug}
-              title={post.frontmatter.title}
-              date={post.frontmatter.date}
-            />
-          ))}
-        </ul>
+        {_.map(years, year => (
+          <div className="group" key={year}>
+            <h2>{year}</h2>
+            <ul>
+              {groups[year].map(({ node: post }) => (
+                <PostListing
+                  key={post.id}
+                  slug={post.fields.slug}
+                  title={post.frontmatter.title}
+                  date={post.frontmatter.date}
+                />
+              ))}
+            </ul>
+          </div>
+        ))}
       </ArchivesPage>
     );
   }
