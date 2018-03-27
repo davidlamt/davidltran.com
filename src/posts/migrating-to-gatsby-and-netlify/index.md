@@ -10,7 +10,7 @@ Yup.
 
 This is the third time my blog has drastically changed in the past year. Am I constantly unhappy with the work I put into my blog?
 
-Well, not exactly. However, nothing would change same if I was happy, right? I believe that there has to be *some* discontent when things change.
+Well, not exactly. However, nothing would change if I was happy, right? I believe that there has to be *some* discontent when things change.
 
 I consider my site a playground for experimenting with new technologies and methodologies. I love to learn new frameworks and techniques but I always have trouble applying them to projects.
 
@@ -38,13 +38,13 @@ Rebuilding my site with Gatsby would be a great introduction to these technologi
 
 It would be remiss of me not to mention Scott Tolinski's awesome [Pro Gatsby course](https://www.leveluptutorials.com/tutorials/pro-gatsby). This course taught me nearly everything I needed to build the site you see.
 
-Scott's course also introduced me to [styled components](https://www.styled-components.com/). I have some many good things to say about this method of writing CSS (maybe I haven't used it long enough to see the downsides). But, I will withhold my thoughts for future posts!
+Scott's course also introduced me to [styled components](https://www.styled-components.com/). I have many good things to say about this method of writing CSS (maybe I haven't used it long enough to see the downsides). But, I will withhold my thoughts for future posts!
 
 From what I can tell, the development process of Gatsby sites is as smooth as Hugo's process.
 
 I have to give a standing ovation to the GraphiQL editor integration with Gatsby. This editor made testing GraphQL queries very easy and significantly reduced my development time.
 
-Again, I had to transfer my content Gatsby. However, this process was not so painful since my content were already written in Markdown. I just had to update the meta data (written in YAML) and fix some linking issues within the content.
+Again, I had to transfer my content to Gatsby. However, this process was not so painful since the content were already written in Markdown. I just had to update the meta data (written in YAML) and fix some linking issues within the content.
 
 Out of all three iterations of my site, I have to say that this iteration was the most hands-on. I used prebuilt themes for the other versions while not having a deep understanding of how the cogs turned.
 
@@ -52,9 +52,7 @@ Not to say that I now have deep knowledge of React, GraphQL, and Gatsby. However
 
 ### Theme
 
-The look and feel are currently experiencing is **largely** inspired by Sean Wash's [personal site](https://seanwash.com/). I really liked how simple and intuitive his site was and wanted to convey something similar with mine.
-
-Again, I would like to credit my design to [Sean Wash](https://seanwash.com/). Check him out for great design and development ideas and thoughts!
+The look and feel you are currently experiencing is **largely** inspired by Sean Washington's [personal site](https://seanwash.com/). I really liked how simple and intuitive his site was and wanted to convey something similar with mine.
 
 Somehow, each iteration of my site is more simple than the last. My tastes are constantly changing but I feel as if they are converging towards simplicity. I like how clean and accessible this project turned out!
 
@@ -62,7 +60,7 @@ Somehow, each iteration of my site is more simple than the last. My tastes are c
 
 If you had been around before this migration, you will have noticed that the email subscription box and comments section has vanished.
 
-I love the connection that comes with dicussing a particular interesting blog post (which is all my posts). This is why I previously used Disqus to faciliate comments.
+I love the connection that comes with dicussing a particularly interesting blog post (which is all my posts). This is why I previously used Disqus to faciliate comments.
 
 I may or may not have removed the comments section because I wanted my blog to look as clean as possible. Also, I believe that these discussions can also take place on a more well suited platform (like [Twitter](https://twitter.com/davidlamt)).
 
@@ -76,7 +74,7 @@ Anyhow, Netlify now offers [form handling](https://www.netlify.com/docs/form-han
 
 Oh man, how I wish I would have discovered [Netlify](https://www.netlify.com/) sooner.
 
-This service made setting up automatic deployment and HTTPs so easy. I "configured" (clicked a button) Netlify to automatically rebuild and deploy my site when changes are pushed to the master branch on my site's [GitHub repository](https://github.com/davidlamt/davidtranscend-com-gatsby).
+This service made setting up automatic deployment and HTTPS so easy. I "configured" (clicked a button) Netlify to automatically rebuild and deploy my site when changes are pushed to the master branch on my site's [GitHub repository](https://github.com/davidlamt/davidtranscend-com-gatsby).
 
 Long gone are my days of setting up webhooks to automatically pull in changes and rebuild my site.
 
@@ -95,5 +93,7 @@ Hope you enjoyed reading my non-sponsored post praising Gatsby and Netlify. Gats
 Overall, I had a fantastic time recreating my site with these new, great technologies. I now have a better understanding of these tools and I hope to continue using them in future projects!
 
 There is one feature I miss from Hugo and WordPress: scheduling posts. I have not been able to find a way to schedule posts to publish in the future with Gatsby and / or Netlify. If you have any ideas, please reach out!
+
+Again, I would like to credit [Sean Washington](https://seanwash.com/) for my site's design. Check him out for great design and development ideas and thoughts!
 
 What are your thoughts on Gatsby and Netlify? In your opinion, what are some downsides of static site generators that I have failed to mention?
