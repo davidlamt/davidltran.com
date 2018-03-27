@@ -4,7 +4,7 @@ date: "2017-09-10"
 tags: ["development"]
 ---
 
-*Note*: I have migrated this blog to Gatsby!
+*Note*: I have migrated this blog to [Gatsby](/blog/migrating-to-gatsby-and-netlify)!
 
 I have recently added an [archives page](/archives) to my blog.
 
