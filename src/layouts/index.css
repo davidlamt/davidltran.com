@@ -40,10 +40,14 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  border-bottom: 2px solid #fdcb6e;
 }
 abbr[title] {
   border-bottom: none;
@@ -186,6 +190,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  height: 100%;
 }
 * {
   box-sizing: inherit;
@@ -206,6 +211,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  height: 100%;
 }
 img {
   max-width: 100%;
@@ -621,4 +627,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+#___gatsby {
+  height: 100%
 }
