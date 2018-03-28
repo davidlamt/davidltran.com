@@ -14,9 +14,9 @@ While I said *transitioned* earlier, I have not actually begun working yet. I as
 
 I have been taking this time to do some decluttering, work on side projects (like this blog!), and spend time with my dog. Expect some extra posts this week since I have quite a bit of time to think and reflect!
 
-As is stated on my [home page](/), I am very excited to join the [TigerConnect](https://www.tigertext.com/) team!
+As stated on my [home page](/), I am very excited to join the [TigerConnect](https://www.tigertext.com/) team!
 
-TigerConnect is building a platform to help faciliate secure and reliable communication in the healthcare industry.
+TigerConnect is building a platform to help facilitate secure and reliable communication in the healthcare industry.
 
 > In healthcare, communication can literally change lives. With medical error now the third leading cause of death in the US (Johns Hopkins University), it’s more crucial than ever for your care teams to operate as cohesive units.
 
@@ -32,13 +32,13 @@ While I am very excited for this transition, I would be lying if I did not say I
 
 The thing I will miss the most are the great friendships that were cultivated during my stay. However, I know that I will continue to meet awesome people! Plus, I can still keep in contact with them and hang out every now and then.
 
-I know this may be a bit confusing and it is also difficult for me to express. However, I felt like I was becoming too *comfortable* in this position. I felt my growth as a developer became stagnant.
+I know the following may sound a bit confusing and it is also difficult for me to express. However, I felt like I was becoming too *comfortable* in this position. I felt my growth as a developer became stagnant.
 
-The reasoning behind this feeling is probably both a combination of the company culture and some form of burnout. This did play a factor in my decision to leave but my desire to jump into the web space was the overarching rationale.
+The reasoning behind this feeling is probably a combination of the company culture and some form of burnout. This did play a factor in my decision to leave but my desire to jump into the web space was the overarching rationale.
 
 ## Closing Thoughts
 
-The end of another chapter in my life. So it goes. 
+The end of another chapter in my life. So it goes.
 
 Overall, I will definitely come to miss many things about my previous company, especially those that I took for granted. On the other hand, I am ecstatic to begin having an impact on the healthcare industry!
 
