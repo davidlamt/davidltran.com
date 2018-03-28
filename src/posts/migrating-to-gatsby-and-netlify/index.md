@@ -1,6 +1,6 @@
 ---
 title: "Migrating to Gatsby and Netlify"
-date: "2018-03-28"
+date: "2018-03-27"
 tags: ["thoughts"]
 ---
 
