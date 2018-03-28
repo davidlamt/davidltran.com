@@ -4,7 +4,7 @@ date: "2017-08-20"
 tags: ["thoughts"]
 ---
 
-*Note*: I have migrated this blog to Gatsby!
+*Note*: I have migrated this blog to [Gatsby](/blog/migrating-to-gatsby-and-netlify)!
 
 Do you notice anything new?
 
