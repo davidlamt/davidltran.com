@@ -18,7 +18,7 @@ This resulted in the initial load (and on refreshes) displaying the content with
 
 After spending an undisclosed amount of time trying various, unsuccessful, "solutions", I finally decided to check the Network tab in the Chrome Develper Tools. 
 
-What I discovered was that the initial page loaded did not contain the styles I applied using Styled Components. Within the Network tab, I took a look at the page ("localhost" when testing locally). The Preview tab showed the unstyled content and the Response tab was void of the styles I used.
+What I discovered was that the initial page did not load with the styles I applied using Styled Components. Within the Network tab, I took a look at the page ("localhost" when testing locally). The Preview tab showed the unstyled content and the Response tab was void of the styles I used.
 
 Okay, so, the styled components were not bundled with the initial load. Why?
 
@@ -31,7 +31,7 @@ The fix is actually quite simple, I just needed to install the [gatsby-plugin-st
 To install with npm, just issue the following command inside your project's directory:
 
 ```bash
-npm i gatsby-styled-components
+npm i gatsby-plugin-styled-components
 ```
 
 Afterwards, add the plugin to your configuration file:
@@ -58,4 +58,4 @@ Maybe it is as simple as that. If you have a better explanation, please let me k
 
 Actually, this package was installed and configured within the course I took. I just made a stupid mistake of not noticing it when creating my own site.
 
-Also, maybe next time I will utilize the useful debugging tools at my disposal instead of wanderlessly trying random things.
+Also, maybe next time, I will utilize the useful debugging tools at my disposal instead of fruitlessly trying random things.
