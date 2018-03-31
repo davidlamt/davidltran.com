@@ -4,11 +4,7 @@ date: "2018-03-30"
 tags: ["development"]
 ---
 
-<!-- Recently, I was trying to improve my programming workflow. I like the idea behind linters because it helps promote code uniformity, which is great when working on a team.
-
-It is much easier to to jump in and maintain code that looks familiar. I believe that a new programmer should not be able to distinguish between different modules. -->
-
-Recently, I was trying to improve my programming workflow but found the process of setting up ESLint and Prettier for VSCode confusing. I wanted to my source code to both be linted and formatted on save.
+Recently, I was trying to improve my programming workflow but found the process of setting up ESLint and Prettier for VSCode confusing. I wanted my source code to both be linted and formatted on save.
 
 Thankfully, I found a [short tutorial](https://www.youtube.com/watch?v=YIvjKId9m2c) by Wes Bos that heled me get started. However, I had a bit of trouble installing dependencies and configuring the plugins.
 
@@ -16,7 +12,7 @@ This post will review the video procedures in written form and dive a bit furthe
 
 ## ESLint vs. Prettier
 
-Actually, it is not a battle between the two softwares. These two tools work in harmony to greatly improve one's workflow.
+Actually, it is not a battle between the two tools. They work in harmony to greatly improve one's workflow.
 
 You should think of it as ESLint *and* Prettier.
 
@@ -48,7 +44,7 @@ Afterwards, we can go ahead and install our other packages (and their dependenci
 install-peerdeps -d eslint-plugin-prettier
 ```
 
-We also need to install the following packages:
+We need to install the following packages:
 
 * eslint-config-airbnb (I like to use Airbnb's ESLint configuration as a base)
 * eslint-plugin-prettier (what we just installed above)
@@ -59,7 +55,7 @@ Unfortunately, we have to install these packages one-by-one since install-peerde
 
 ## Set Up ESLint Configuration
 
-Open up your VSCOde's Commands panel (Ctrl + Shift + P on Windows) and type "eslint". Select the "ESLint: Create .eslintrc.json File". This will create the ESLint configuration file at the root directory of your project.
+Open up your VSCode's Commands panel (Ctrl + Shift + P on Windows) and type "eslint". Select the "ESLint: Create .eslintrc.json File". This will create the ESLint configuration file at the root directory of your project.
 
 There is also a way to set up a global ESLint configuration file. However, I prefer having the configuration at the project level since different projects may require different configurations.
 
@@ -145,6 +141,6 @@ Now, instead of applying the VSCode's default JavaScript formatting, ESLint will
 
 ## Closing Thoughts
 
-Once again, I would like to credit Wes Bos for providing a useful video tutorial. I just wanted to provide a step-by-step guide that I would have found useful.
+Once again, I would like to credit [Wes Bos](https://wesbos.com/) for providing a useful video tutorial. I just wanted to provide a step-by-step guide with a bit more detail.
 
 I hope this awesome combination of linting and formatting files will help you become more productive!
