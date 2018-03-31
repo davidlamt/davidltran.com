@@ -8,13 +8,13 @@ Recently, I had to figure out a way to log when a function was entered and exite
 
 The code base had many functions that had multiple return statements within them. In addition to breaking [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) for adding the same logging logic to every function, we would need to copy the exit logic multiple times within the same function.
 
-Luckily, I discovered something called [instrumentation](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html). This post will replicate the steps we took so you can do accomplish something similar!
+Luckily, I discovered something called [instrumentation](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html). This post will replicate the steps we took so you can accomplish something similar!
 
 ## Instrumentation
 
 In addition to having a pretty cool name, this feature allows for collecting profiling statistics in programs. This is exactly what I needed as we wanted to create a debugging log trail.
 
-First, we needed to add the `finstrument-functions` options to our `CFLAGS` compiler variable.
+First, we needed to add the `-finstrument-functions` options to our `CFLAGS` compiler variable.
 
 ## Implement Instrumentation Functions
 
@@ -37,7 +37,7 @@ Since our goal was to provide beneficial logging details, we also grabbed the fi
 
 Make sure these macros, or something similar, are available in the compiler you are utilizing.
 
-However, using these macros within instrumentation functions results in the information always pointing to the instrumentation function. We were fine with the file name and line number being inconsistent, but we needed the correct function names for a productive debugging session.
+However, using these macros within instrumentation functions results in the information always pointing to the instrumentation function. We were fine with the file name and line number being inconsistent, but we needed the correct function names for productive debugging sessions.
 
 I will show how we successfully retrieved the function name in the next section.
 
@@ -53,11 +53,11 @@ We accomplished what we wanted with a version of the following code:
 void getSymbolFromAddress(void *addr, char *symbol) {
 #if WIN32
 
-  memset(symbol, 0, _MAX_SYMBOL_LENGTH);
+  memset(symbol, 0, 1024);
 
   DWORD *displacement = 0;
 
-  IMAGEHLP_SYMBOL *pSym = (IMAGEHLP_SYMBOL *)n_malloc(sizeof(IMAGEHLP_SYMBOL) + (_MAX_SYMBOL_LENGTH - 1) * sizeof(CHAR));
+  IMAGEHLP_SYMBOL *pSym = (IMAGEHLP_SYMBOL *)n_malloc(sizeof(IMAGEHLP_SYMBOL) + (1024 - 1) * sizeof(CHAR));
   pSym->SizeOfStruct = sizeof(IMAGEHLP_SYMBOL);
   pSym->MaxNameLength = MAX_PATH;
 
@@ -86,7 +86,7 @@ void getSymbolFromAddress(void *addr, char *symbol) {
 }
 
 void __cyg_profile_func_enter(void *this_fn, void *call_site) {
-  char functionName[_MAX_SYMBOL_LENGTH] = { 0 };
+  char functionName[1024] = { 0 };
 
   getSymbolFromAddress(this_fn, functionName);
 
@@ -94,7 +94,7 @@ void __cyg_profile_func_enter(void *this_fn, void *call_site) {
 }
 
 EXPORT_SYMBOLS void __cyg_profile_func_exit(void *this_fn, void *call_site) {
-  char functionName[_MAX_SYMBOL_LENGTH] = { 0 };
+  char functionName[1024] = { 0 };
 
   getSymbolFromAddress(this_fn, functionName);
 
