@@ -18,7 +18,7 @@ You should think of it as ESLint *and* Prettier.
 
 ESLint is a linter that *lints* your code and helps detect "bad" practices. You and / or your team determines what bad practices are.
 
-Prettier is a formatter that *formats* your code according to a specified style guide. Again, you and / or your team creates a style guide.
+Prettier is a formatter that *formats* your code according to a specified style guide. Again, you and / or your team create a style guide.
 
 For both tools, there are some useful defaults and there are definitely numerous base configurations created by other companies that you can build on.
 
@@ -55,7 +55,7 @@ Unfortunately, we have to install these packages one-by-one since install-peerde
 
 ## Set Up ESLint Configuration
 
-Open up your VSCode's Commands panel (Ctrl + Shift + P on Windows) and type "eslint". Select the "ESLint: Create .eslintrc.json File". This will create the ESLint configuration file at the root directory of your project.
+Open up your VSCode's Commands panel (Ctrl + Shift + P on Windows) and type "eslint". Select the "ESLint: Create .eslintrc.json File" option. This will create the ESLint configuration file at the root directory of your project.
 
 There is also a way to set up a global ESLint configuration file. However, I prefer having the configuration at the project level since different projects may require different configurations.
 
