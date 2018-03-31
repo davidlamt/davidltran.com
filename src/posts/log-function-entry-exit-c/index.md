@@ -14,7 +14,7 @@ Luckily, I discovered something called [instrumentation](https://gcc.gnu.org/onl
 
 In addition to having a pretty cool name, this feature allows for collecting profiling statistics in programs. This is exactly what I needed as we wanted to create a debugging log trail.
 
-First, we needed to add the `-finstrument-functions` options to our `CFLAGS` compiler variable.
+First, we needed to add the `-finstrument-functions` option to our `CFLAGS` compiler variable.
 
 ## Implement Instrumentation Functions
 
@@ -37,9 +37,9 @@ Since our goal was to provide beneficial logging details, we also grabbed the fi
 
 Make sure these macros, or something similar, are available in the compiler you are utilizing.
 
-However, using these macros within instrumentation functions results in the information always pointing to the instrumentation function. We were fine with the file name and line number being inconsistent, but we needed the correct function names for productive debugging sessions.
+However, using these macros within instrumentation functions results in the information always pointing to the instrumentation function. We were fine with the file name and line number being inconsistent, but we at least needed the correct function names for productive debugging sessions.
 
-I will show how we successfully retrieved the function name in the next section.
+I will show you how we successfully retrieved the function name in the next section.
 
 ## Multiple Platforms
 
@@ -47,7 +47,7 @@ The next hurdle I had to jump over was making sure this logging functionality wo
 
 As previously mentioned, we still needed to retrieve the correct function names. Unfortunately, the confusingly named `this_fn` parameter of the instrumentation function does not give the actual function name.
 
-We accomplished what we wanted with a version of the following code:
+We accomplished what we wanted with a variation of the following code:
 
 ```c
 void getSymbolFromAddress(void *addr, char *symbol) {
