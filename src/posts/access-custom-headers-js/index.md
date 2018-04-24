@@ -54,4 +54,6 @@ There are also services out there that will act as a proxy for you. However, I t
 
 Now that I think about it, this issue is not only limited to JavaScript. This problem will occur when you try to retrieve custom headers in any language when the headers are not properly exposed.
 
-Well, whatever. I did run into this issue when I was working with JavaScript. At least this post provides a language-agnostic approach!
+Well, whatever. I did run into this issue when I was working with JavaScript. 
+
+At least this post provides a language-agnostic approach!
