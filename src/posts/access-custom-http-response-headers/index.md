@@ -1,18 +1,18 @@
 ---
-title: "Accessing Custom Headers in JavaScript"
+title: "Accessing Custom HTTP Response Headers"
 date: "2018-04-23"
 tags: ["development"]
 ---
 
 I am working on a user story that makes trips to an API endpoint that returns custom headers. Like how vague that was? Best to throw caution to the wind in the hopes of avoiding any legal issues. 🙂
 
-Anyways, the issue that occured was that I could not retrieve the custom headers from the HTTP response programmatically with JavaScript. However, I was able to see the custom headers when viewing the request / response in the Chrome DevTools.
+Anyways, the issue that occured was that I could not retrieve the custom headers from the HTTP response programmatically with JavaScript. However, I was able to see the custom headers when viewing the response in the Chrome DevTools.
 
 What gives?!?
 
 ## Exposing Headers
 
-Several Stack Overflow answers later (I need to improve my query game), I found out that this was an issue with the response headers.
+Several Stack Overflow answers later (I need to improve my query game), I found out that this was an issue with the response headers being restricted.
 
 The solution could be fairly simple depending on your situation.
 
@@ -24,8 +24,6 @@ If you have access to the server, this is fantastic. Otherwise, you will need to
 
 ## Closing Thoughts
 
-Now that I think about it, this issue is not only limited to JavaScript. This problem will occur when you try to retrieve custom headers in any language when the headers are not properly exposed.
+Now that I think about it, most of the web APIs I have worked with return data in the response body. I believe this is the first time I am working with custom data in response headers.
 
-Well, whatever. I did run into this issue when I was working with JavaScript. 
-
-At least this post provides a language-agnostic approach!
+An interesting point that I will have to do research on is the best practices for using a response body versus a response header (or both).
