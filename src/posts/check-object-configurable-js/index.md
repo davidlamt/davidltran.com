@@ -12,15 +12,15 @@ Something along the lines of "cannot assign to read only property..."
 
 ## Object Property Descriptors
 
-Object properties have property descriptors that indicate how the property behaves in different scenarios. For instance, a property can be marked so that it cannot be changed.
+Object properties have descriptors that indicate how the property behaves in different scenarios. For instance, a property can be marked so that it cannot be changed.
 
 How does one set a property descriptor in the first place?
 
-Objects are created with a predefined set of descriptors. However, there are several way of setting and modifying property descriptors.
+Objects are created with a predefined set of descriptors. However, there are several ways of setting and modifying property descriptors.
 
 One way would be to use [Object.defineProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty). Check out that MDN resource to see all the available descriptors!
 
-If you are looking to restrict access on an object's properties, you should take a look at [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) and [Object.seal()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal).
+If you are looking to restrict changes to an object's properties, you should take a look at [Object.freeze()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) and [Object.seal()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal).
 
 ## Checking Property Configurability
 
@@ -40,7 +40,7 @@ console.log(Object.getOwnPropertyDescriptor(frozenObject, 'cold').configurable) 
 
 I recommend refactoring the check into a utility function called `isConfigurable()` or something similar.
 
-It is also important to point out that the `configurable` descriptor tells you if the property can be modified and deleted.
+It is also important to point out that the `configurable` descriptor tells you if the property can be modified **and** deleted.
 
 ## Closing Thoughts
 
