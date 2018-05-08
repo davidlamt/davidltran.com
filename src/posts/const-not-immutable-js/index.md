@@ -56,7 +56,7 @@ person.name = 'Tim';
 console.log(person); // { age: 35, name: 'Tim' }
 ```
 
-Hmm, that is a bit weird. Why could a variable declared with `const` by changed?
+Hmm, that is a bit weird. Why could a variable declared with `const` be changed?
 
 Well, as previously stated, that is because variables delcared with `const` are **not** immutable.
 
@@ -64,14 +64,14 @@ Well, as previously stated, that is because variables delcared with `const` are 
 
 I prefer to say that **variables declared with `const` cannot be reassigned** instead of stating that they are immutable. This may just seem like a small change but the wording makes all the difference.
 
-This new way of thinking would shed light on the example above. When declaring [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) as `const`, they seem to be immutable because changing a primitive requires a reassignment.
+This new way of thinking would shed light on the example above. When declaring [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) with `const`, they seem to be immutable because changing a primitive requires a reassignment.
 
-However, [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) behave differently than primitives. Using `const` will prevent the variable from being reassigned another object but it will not stop the properties from being reassigned.
+However, [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) behave differently than primitives. Using `const` will prevent the variable from being reassigned another object but it will not stop the object's properties from being reassigned.
 
 If you are looking to lock down an object's properties, check out my previous posts on [object mutability](/blog/javascript-object-mutability) and [property descriptors](/blog/check-object-configurable-js)!
 
 ## Closing Thoughts
 
-Because of this dissonance between the `const` keyword and its meaning, I can see why some industry experts advocate against using it. However, I still hold my belief of [defaulting to const](/blog/var-vs-let-vs-const) because of its various benefits.
+Because of this dissonance between the `const` keyword and its meaning, I can see why some industry experts advocate against using it. However, I still hold to my belief of [defaulting to const](/blog/var-vs-let-vs-const) because of its various benefits.
 
-I can only hope that as more people adopt `const`, the community can spread light on what it actually does to help prevent confusion. I hope to do my part with this brief blog post!
+I can only hope that as more people adopt `const`, the community will continue to spread light on what it actually does to help prevent confusion. I hope to do my part with this brief blog post!
