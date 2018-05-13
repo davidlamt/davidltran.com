@@ -37,3 +37,5 @@ However, there may be times where it is not (subjectively) appropriate to create
 One reason behind this is to help maintain the developer's focus. Imagine if you had to navigate between multiple render helper methods while keeping track of what was happening in the main one.
 
 ## Closing Thoughts
+
+While I may or may not adopt this methodology moving foward in my own projects, I found the idea interesting. I hope to continue to stay receptive to different ideaologies and perspectives throughout my career so that I may become a more well-rounded developer.
