@@ -40,7 +40,7 @@ const val = undefined;
 console.log(val); // undefined
 ```
 
-Furthermore, similar to undefined variables, non-existent object properties and out-of-bound array indexes will result in `undefiend`.
+Furthermore, similar to undefined variables, nonexistent object properties and out of bound array indices will result in `undefiend`.
 
 ```js
 const obj = {};
@@ -122,4 +122,4 @@ Default arguments will be applied when an `undefined` value is passed in but `nu
 
 The idea that `null` relates to intentionality reminds me of API calls that return an empty array instead of some "undefined" value when there are no results.
 
-We are always looking for meaning behind code and the correct usage of `null` and `undefined` will help convey your intentions to future developers (maybe yourself)!
+We are always looking for clues in code and the correct usage of `null` and `undefined` will help convey your intentions to future developers (maybe yourself)!
