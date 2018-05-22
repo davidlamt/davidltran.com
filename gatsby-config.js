@@ -40,7 +40,7 @@ module.exports = {
         trackingId: 'UA-66121615-5',
         head: true,
         anonymize: true,
-        respectDNT: false,
+        respectDNT: true,
       },
     },
   ],
