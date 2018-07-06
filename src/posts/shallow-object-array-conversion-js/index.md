@@ -75,7 +75,7 @@ Object.entries(people);
 */
 ```
 
-We then [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) over each array element (an array itself) and transform the data using the anonymous [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+We then [map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) over each array element (an array itself) and transform the data using an anonymous [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 
 ```js
 /* ... */.map(([id, attributes]) => /* ... */)
@@ -103,20 +103,20 @@ attributes = {
 };
 ```
 
-Inside of the arrow function's body, we a implicitly returning a new object containing all of the `attributes` and the `id`.
+Inside of the arrow function's body, we a implicitly returning a new object containing all of the `attributes` (using [object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)) and the `id`.
 
 ```js
 /* ... */.map(/* ...*/ => ({ ...attributes, id }));
 ```
 
-Here, we are taking advantage of the arrow function's implicit return feature. If we exclude the brackets containing the function body, the statement is evaluated and returned automatically.
+Here, we are taking advantage of the arrow function's implicit return feature. If we exclude the braces containing the function body, the statement is evaluated and returned automatically.
 
-In the case that we want to return an object, we must wrap the object with parentheses to distinguish it from function brackets.
+In the case that we want to return an object, we must wrap the object with parentheses to distinguish it from function braces.
 
 ## Closing Thoughts
 
-In our example, we are including the object's key in our new object. This may be useful when we have a hash map, where the key is a hash value. [Firebase](https://firebase.google.com/) stores some data in a hash map and when retrieving the data via JavaScript, it is in object format.
+In our example, we are including the original object's key in our new object. This may be useful when we have a hash map, where the key is a hash value. [Firebase](https://firebase.google.com/) stores some data in a hash map and provides an object when retrieving the data with JavaScript.
 
 However, if the key does not matter in your situation, you may want to use [Object.values()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values).
 
-Keep in mind that these solutions are shallow conversions, they only transform the first layer. You may want to look into recursion if you want a deep transform.
+Keep in mind that these solutions are shallow conversions - they only transform the first layer. You may want to look into recursion if you want a deep transform.
