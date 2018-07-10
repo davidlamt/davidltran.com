@@ -31,13 +31,13 @@ Gastown reminds me of the "downtowns" of some cities. There are many interesting
 
 Our second day was mostly spent hiking [Lindeman Lake](https://www.tripadvisor.com/Attraction_Review-g154927-d11645372-Reviews-Lindeman_Lake-Chilliwack_British_Columbia.html).
 
-Again, we woke up early so that we could get there before it got too crowded. Plus, we did not want to be hiking during the hotter hours of the day.
+Again, we woke up early so that we could get there before it got too crowded. Plus, we did not want to be hiking during the warmer hours of the day.
 
 ![Lindeman Lake](lindeman-lake.jpg)
 
 ![Lindeman Lake 2](lindeman-lake-2.jpg)
 
-Here, we are some pretty breathtaking views. I may or may not have hurt myself taking those photos.
+We saw some pretty breathtaking views. I may or may not have hurt myself taking those photos.
 
 The hike was moderate; there was a good amount of uphill. Definitely one of the more challenging hikes I've been on but not super difficult. However, take that with a grain of salt as I have not been on enough hikes to make a good comparison.
 
@@ -47,7 +47,9 @@ We certainly slept well this night - finally got to sleep in as well.
 
 Our main attraction this day was the [VanDusen Botanical Garden](https://www.tripadvisor.com/Attraction_Review-g154943-d184433-Reviews-VanDusen_Botanical_Garden-Vancouver_British_Columbia.html).
 
-Oh boy, I felt like I had not been to real botanical garden after experiencing this. Large would be an understatement. This place was massive plants from everywhere.
+Oh boy, after experiencing this, I felt like I had not been to real botanical garden before. Large would be an understatement. This place was massive with plant species from all around the world.
+
+This garden is 55-acres. Enough said.
 
 ![VanDusen Botanical Garden](vandusen-botanical-garden.jpg)
 
@@ -55,14 +57,14 @@ Oh boy, I felt like I had not been to real botanical garden after experiencing t
 
 ## Closing Thoughts
 
-One of the many things we noticed was that TripAdvisor is used for more scenic locations compared to Yelp in the states. Also, everything is in kilometers and gas is by litre and cents-based. That was a fun surprise. 🙃
+One of the many things we noticed was that TripAdvisor is preferred for more scenic locations compared to Yelp in the states. Also, everything is in kilometers and gas is by the litre and cents-based. That was a fun surprise. 🙃
 
 As I mentioned earlier, we were pretty exhausted the first two days. We definitely had a lot of fun but once we had some time to rest, we experienced how tired our bodies actually were.
 
 I have noticed that I become more tired during "vacations". It seems that when we decide to take some time off to go "relax", we pack our schedule so that we can experience more things that we usually do not have the opportunity to.
 
-While this frequently leads to more enjoyment, the hectic schedule often causes exhaustion after the fact. As a result, it may be easy to burn out even while on vacation.
+While this frequently leads to more experiences, the hectic schedule often causes exhaustion after the fact. There is a delicate balance to planning a vacation for enjoyment and relaxation. Some activties could even qualify as both.
 
-Also, this leads to a desire for a "post-vacation" where we truly relax after the initial vacation. Have any of you experienced something similar before?
+Also, the fatigue leads to a desire for a "post-vacation" where we truly relax after the initial vacation. Have any of you experienced something similar before?
 
 Anyhow, this was an awesome first trip (for me) to Canada. I enjoyed some of the things the country offered and would definitely come back in the future!
