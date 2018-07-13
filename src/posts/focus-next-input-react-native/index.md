@@ -15,16 +15,15 @@ Note that this implementation will specifically be for React Native but you can 
 ```jsx
 // ...
 render() {
-    return (
+  return (
     <TextInput 
       blurOnSubmit={false}
       onSubmitEditing={() => this.passwordRef.focus()}
-      ref={ref => this.usernameRef = ref} 
     />
     <TextInput 
       ref={ref => this.passwordRef = ref} 
     />
-  )
+  );
 }
 // ...
 ```
@@ -33,9 +32,9 @@ Here, we are only chaining together two inputs but you can use the same approach
 
 ## Analysis
 
-We are using [refs](https://reactjs.org/docs/refs-and-the-dom.html) to keep _references_ to our text inputs. We provide a callback to the `ref` property that will receive the component instance (DOM node) and then assign it to our instance property.
+We are using [refs](https://reactjs.org/docs/refs-and-the-dom.html) to keep _references_ to our text inputs. We provide a callback to the `ref` property that will receive the component instance (DOM node) and then assign it to an instance property.
 
-Afterwards, we pass a callback to the [onSubmitEditing](https://facebook.github.io/react-native/docs/textinput#onsubmitediting) property that will focus our desired input field once a user "submits" their input. The [blurOnSubmit](https://facebook.github.io/react-native/docs/textinput#bluronsubmit) property will be useful if you want the keyboard to persist across multiple inputs.
+Afterwards, we pass a callback to the [onSubmitEditing](https://facebook.github.io/react-native/docs/textinput#onsubmitediting) property that will focus our desired input field once a user "submits" their input. The [blurOnSubmit](https://facebook.github.io/react-native/docs/textinput#bluronsubmit) property will be useful if you want the virtual keyboard to persist across multiple inputs.
 
 ## Abstraction
 
@@ -117,15 +116,19 @@ render() {
         getRef={ref => this.setState({ passwordRef: ref })}
       />
     </View>
-  )
+  );
 }
 // ...
 ```
 
 ## Closing Thoughts
 
-Using `refs` for focusing inputs is pretty useful. The implementation becomes a bit more difficult as you have child components but the abstraction improves future maintainability.
+Using `refs` for focusing inputs is pretty useful. The implementation becomes a bit more difficult as you have child components but I believe the abstraction improves future maintainability.
 
-To be honest, `refs` were a confusing concept for me that I avoided. Not to state that I fully understand it now but being put in a situation where I had to understand it enough was a great learning experience.
+To be honest, `refs` were a confusing concept that I avoided. Not to state that I fully understand it now; but being put in a situation where I had to understand it enough was a great learning experience.
 
 A bit philosophical but **we tend grow the most during times of discomfort**.
+
+### Shameless Plug
+
+Currently working on [compounded](https://github.com/davidlamt/compounded), a simple mobile compound interest calculator. Looking to solve a personal need and learn new technologies!
