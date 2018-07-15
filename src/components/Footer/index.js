@@ -40,8 +40,10 @@ const MainNavigation = styled.nav`
         text-decoration: none;
         color: #aaa;
         border-bottom: none;
+        box-shadow: none;
 
         &:hover {
+          background: none;
           color: #333;
           border-bottom: 1px solid #333;
         }
