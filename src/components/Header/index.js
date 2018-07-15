@@ -26,6 +26,11 @@ const HeaderContainer = styled.div`
       color: #333;
       text-decoration: none;
       border-bottom: none;
+      box-shadow: none;
+
+      :hover {
+        background: none;
+      }
     }
   }
 `;
@@ -53,8 +58,10 @@ const MainNavigation = styled.nav`
         text-decoration: none;
         color: #0984e3;
         border-bottom: none;
+        box-shadow: none;
 
         &:hover {
+          background: none;
           border-bottom: 1px solid #0984e3;
         }
       }

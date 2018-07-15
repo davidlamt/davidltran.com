@@ -14,6 +14,11 @@ const ProjectsSection = styled.div`
     a {
       color: inherit;
       border-bottom: none;
+      box-shadow: none;
+
+      :hover {
+        background: none;
+      }
     }
   }
 
