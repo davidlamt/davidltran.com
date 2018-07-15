@@ -5,9 +5,11 @@ const IntroductionSection = styled.div`
   margin-bottom: 3rem;
   .svg {
     border-bottom: none;
+    box-shadow: none;
 
     &:hover {
-      fill: #fdcb6e;
+      background: none;
+      fill: #0984e3;
     }
   }
 `;
