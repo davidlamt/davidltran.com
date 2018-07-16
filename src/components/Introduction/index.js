@@ -22,7 +22,8 @@ const IntroductionSection = styled.div`
     box-shadow: none;
     border-bottom: none;
 
-    &:hover {
+    :active,
+    :hover {
       background: none;
       fill: #0984e3;
     }
