@@ -25,12 +25,6 @@ const HeaderContainer = styled.div`
     a {
       color: #333;
       text-decoration: none;
-      border-bottom: none;
-      box-shadow: none;
-
-      :hover {
-        background: none;
-      }
     }
   }
 `;
@@ -50,18 +44,16 @@ const MainNavigation = styled.nav`
       padding-right: 15px;
       border-right: 1px dotted #0984e3;
 
-      &:last-child {
+      :last-child {
         border-right: none;
       }
 
       a {
-        text-decoration: none;
         color: #0984e3;
-        border-bottom: none;
-        box-shadow: none;
+        text-decoration: none;
 
-        &:hover {
-          background: none;
+        :active,
+        :hover {
           border-bottom: 1px solid #0984e3;
         }
       }
