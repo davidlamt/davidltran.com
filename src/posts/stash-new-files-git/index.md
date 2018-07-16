@@ -24,9 +24,9 @@ The `-m` option allows us to set a message for this stash operation so we can mo
 
 ### Warning
 
-Using the `stash` command with the `--include-untracked` option will clean your directory after the stash. As a result, any untracked files you have in `.gitignore` will be permanently deleted.
+Using the `stash` command with the `-u` option will clean your working directory after the stash. As a result, any untracked files you have in `.gitignore` will be permanently deleted.
 
-There is the `--all` option if you wish to stage untracked files that are also ignored.
+There is the `--all` or `-a` option if you wish to stash untracked files that are also ignored.
 
 ## Closing Thoughts
 
