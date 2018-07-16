@@ -9,9 +9,9 @@ const PostsSection = styled.div`
   margin-bottom: 2rem;
 
   span.header {
+    line-height: 1.1;
     font-weight: bold;
     font-size: 2.25rem;
-    line-height: 1.1;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
       Helvetica Neue, sans-serif;
     text-rendering: optimizeLegibility;
@@ -19,12 +19,7 @@ const PostsSection = styled.div`
 
     a {
       color: inherit;
-      border-bottom: none;
-      box-shadow: none;
-
-      :hover {
-        background: none;
-      }
+      text-decoration: none;
     }
   }
 

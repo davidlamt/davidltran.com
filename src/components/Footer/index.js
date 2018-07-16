@@ -32,18 +32,16 @@ const MainNavigation = styled.nav`
       padding-right: 15px;
       border-right: 1px solid #aaa;
 
-      &:last-child {
+      :last-child {
         border-right: none;
       }
 
       a {
         text-decoration: none;
         color: #aaa;
-        border-bottom: none;
-        box-shadow: none;
 
-        &:hover {
-          background: none;
+        :active,
+        :hover {
           color: #333;
           border-bottom: 1px solid #333;
         }

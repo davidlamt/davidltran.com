@@ -38,7 +38,44 @@ const PostMeta = styled.div`
 
     li {
       margin: 0 0.5rem 0 0;
+
+      a {
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 2px 0px 0px #cee6f9;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #cee6f9;
+        padding-top: 2px;
+
+        :active,
+        :hover {
+          background: #cee6f9;
+        }
+      }
     }
+  }
+`;
+
+const PostMarkdown = styled.div`
+  a {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 0px 0px #cee6f9;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #cee6f9;
+    padding-top: 2px;
+
+    :active,
+    :hover {
+      background: #cee6f9;
+    }
+  }
+
+  code:before,
+  code:after,
+  tt:before,
+  tt:after {
+    content: none;
   }
 `;
 
@@ -86,7 +123,8 @@ export default class PostPage extends Component {
           <ul>{data.markdownRemark.frontmatter.tags.map(tag => this.generateTag(tag))}</ul>
         </PostMeta>
 
-        <div
+        <PostMarkdown
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: data.markdownRemark.html,
           }}
