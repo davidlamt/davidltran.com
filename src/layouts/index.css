@@ -40,16 +40,10 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #cee6f9;
-  box-shadow: 0 2px 0px 0px #cee6f9;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:active,
 a:hover {
   outline-width: 0;
-  background: #cee6f9;
 }
 abbr[title] {
   border-bottom: none;
