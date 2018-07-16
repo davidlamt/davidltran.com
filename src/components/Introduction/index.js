@@ -3,11 +3,27 @@ import styled from 'styled-components';
 
 const IntroductionSection = styled.div`
   margin-bottom: 3rem;
-  .svg {
-    border-bottom: none;
-    box-shadow: none;
 
-    &:hover {
+  a {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 0px 0px #cee6f9;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #cee6f9;
+    padding-top: 2px;
+
+    :active,
+    :hover {
+      background: #cee6f9;
+    }
+  }
+
+  .svg {
+    box-shadow: none;
+    border-bottom: none;
+
+    :active,
+    :hover {
       background: none;
       fill: #0984e3;
     }
