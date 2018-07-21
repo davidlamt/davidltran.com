@@ -20,6 +20,7 @@ These are some variations that are matched by the regular expression:
 4141234567 
 414.123.4567 
 414-123-4567 
+414 123 4567
 (414) 123-4567 
 1 (414) 123.4567 
 +1 414 123 4567
@@ -29,21 +30,21 @@ You can use a site like [this](https://regex101.com/) to verify the matches. Mak
 
 ## Analysis
 
-| Section      | Explanation                                                                                                                              |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `/^`         | Signifies the beginning of a line                                                                                                        |
-| `\+?`        | Matches the `+` character zero or more times (`?` allows the character can be nonexistent)                                               |
-| `1?`         | Matches the `1` character zero or more times                                                                                             |
-| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times (`[]` signifies a set where one any of the character can be matched) |
-| `\(?`        | Matches the `(` character zero or more times                                                                                             |
-| `[2-9]`      | Matches a single character between 2 and 9                                                                                               |
-| `[0-9]{2}`   | Matches two consecutive characters between 0 and 9                                                                                       |
-| `\)?`        | Matches the `)` character z ero or more times                                                                                            |
-| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times                                                                      |
-| `([0-9]{3})` | Matches three consecutive characters between 0 and 9                                                                                     |
-| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times                                                                      |
-| `([0-9]{4})` | Matches four consecutive characters between 0 and 9                                                                                      |
-| `$/`         | Signifies the end of a line                                                                                                              |
+| Section      | Explanation                                                                                                                               |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `/^`         | Signifies the beginning of a line                                                                                                         |
+| `\+?`        | Matches the `+` character zero or more times (`?` allows the character to be nonexistent)                                                 |
+| `1?`         | Matches the `1` character zero or more times                                                                                              |
+| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times (`[]` signifies a set where one any of the characters can be matched) |
+| `\(?`        | Matches the `(` character zero or more times                                                                                              |
+| `[2-9]`      | Matches a single character between 2 and 9                                                                                                |
+| `[0-9]{2}`   | Matches two consecutive characters between 0 and 9                                                                                        |
+| `\)?`        | Matches the `)` character zero or more times                                                                                              |
+| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times                                                                       |
+| `([0-9]{3})` | Matches three consecutive characters between 0 and 9                                                                                      |
+| `[-. ]?`     | Matches one of the `-`, `.`, or space characters zero or more times                                                                       |
+| `([0-9]{4})` | Matches four consecutive characters between 0 and 9                                                                                       |
+| `$/`         | Signifies the end of a line                                                                                                               |
 
 ## Closing Thoughts
 
