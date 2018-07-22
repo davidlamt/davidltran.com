@@ -30,38 +30,38 @@ Estimating becomes even more difficult, or even impossible, when it comes to tas
 
 How can you estimate something that you do not even know about? We do not know what we do not know.
 
-This is applicable to software development when we are tasked with implementing completely new features. Sure, sometimes we may have an idea on how long it would take based on previous experiences. However, there are times that we have no frame of reference.
+This is applicable to software development when we are tasked with implementing completely new features. Sure, sometimes, we may have an idea of how long it would take based on previous experiences. However, there are times when we have no frame of reference.
 
 When we do not have enough information, estimations become counterproductive. Providing an estimate that may be wildly incorrect is stressful for the provider and frustrating for the recipient. 
 
 ## A Better Approach
 
-One way to combat estimation is to divide and conquer. Split the project or task into smaller sub-tasks that can be more easily estimated. As we saw in the sandwich example, we are able to more easily predict time frames when the scale is smaller.
+One way to combat estimation is to divide and conquer. Split the project or task into smaller sub-tasks that can be more easily scoped. As we saw in the sandwich example, we are able to more accurately predict time frames when the scale is smaller.
 
-In software development, this would correspond to dividing up feature development into even smaller features. This will allow us to have a better estimation and iterate more quickly.
+In software development, this would correspond to dividing up feature development into even smaller features. This will allow us to have a better estimations and iterate more quickly.
 
-I believe that anything requiring a day or more of work should be split up. I have consistently found that my estimations for work that extends across a work day are inaccurate.
+I believe that anything requiring a day or more of work deservers an attempt at being split up. I have consistently found that my estimations for work that extends across a work day are inaccurate.
 
-Furthermore, there are even more benefits of divvying up larger projects:
+Furthermore, here are some more benefits of divvying up larger projects:
 
 - Smaller components are easier to test
-- A quicker sense of accomplishment that is motivational
+- There is a a quicker sense of accomplishment that can be motivational
 - The feedback loop is shorter
 
-## Combating the Unknown
+### Combating the Unknown
 
-Okay, great. But how can we estimate portions of a project that we have not seen before? Where would we even begin?
+Okay, great. But how can we estimate portions of a project that we have not experienced before? Where would we even begin?
 
 Well, first off, we might have a better understanding of the scope if we break down the project. We might even be able to estimate the individual features even if we could not provide a good estimate for the project.
 
-If we still can not provide an somewhat accurate estimation after breaking down the project, this may be a good time to introduce research [timeboxing](https://en.wikipedia.org/wiki/Timeboxing). 
+If we still can not provide a somewhat accurate estimation after breaking down the project, this may be a good time to introduce research [timeboxing](https://en.wikipedia.org/wiki/Timeboxing). 
 
-This is where we allocate a certain amount of time to research the feature to have a better understanding of its scope. Afterwards, we should be able to have a better estimation than before.
+This is where we allocate a certain amount of time to research the feature to have a better understanding of its scope. Afterwards, we should be able to provide a better estimation than before.
 
 ## Closing Thoughts
 
-Estimation may be an easy concept but carrying it out is difficult. This is especially true in software development where we need to provide estimations for projects where we have limited visibility on the actual implementation.
+Estimation may be an easy concept to understand but carrying it out is difficult. This is especially true in software development where we need to provide estimations for projects in which we have limited visibility on the actual implementation.
 
 When in such situations, we can try to break the project down into smaller features where we may be able to better understand the scope and time frame. We may also need to deploy some sort of research phase to better determine the time requirement.
 
-Hopefully with these methods, we can both lessen the stress the estimator experiences and improve the deadline accuracy for stakeholders and users.
+Hopefully, with these methods, we can both lessen the stress the estimator experiences and improve the deadline accuracy for stakeholders and users.
