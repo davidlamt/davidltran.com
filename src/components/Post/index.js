@@ -57,7 +57,7 @@ const PostMeta = styled.div`
 `;
 
 const PostMarkdown = styled.div`
-  a {
+  a:not(.gatsby-resp-image-link) {
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 0px 0px #cee6f9;
     color: #333;

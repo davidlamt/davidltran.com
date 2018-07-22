@@ -6,7 +6,7 @@ tags: ["development"]
 
 I used the following regular expression to test for US phone numbers.
 
-Note that it may not cover all cases; I will display some of the cases I was testing for below. Feel free to use the expression at as a starting point and make modifications to meet your requirements.
+Note that it may not cover all cases; I will display some of the cases I was testing for below. Feel free to use the expression as a starting point and make modifications to meet your requirements.
 
 ## Solution
 
