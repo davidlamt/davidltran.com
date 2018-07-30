@@ -8,7 +8,7 @@ Have you ever rebased your branch on top of another and then try to push the upd
 
 Most likely, Git will reject your request and complain about your branch being behind its remote counterpart.
 
-No worries, you can resolve this issue fairly simply. But **make sure** you apply this solution intentionally.
+No worries, you can resolve this issue fairly easily. But **make sure** you apply this solution intentionally.
 
 ## Solution
 
@@ -24,13 +24,13 @@ We should strive to use the longer, but safer, `--force-with-lease` option inste
 
 ## Analysis
 
-`git push` assumes that the remote branch can be [fast-forwarded](https://confluence.atlassian.com/bitbucket/git-fast-forwards-and-branch-management-329977726.html) to your local branch. This means that the command is only expecting additional commits at the end of your local branch.
+`git push` assumes that the remote branch can be [fast-forwarded](https://confluence.atlassian.com/bitbucket/git-fast-forwards-and-branch-management-329977726.html) to your local branch. This means that the command is only expecting additional commits on your local branch.
 
 When you perform a `git rebase`, your local branch is brought up to date with the latest remote branch commits and your local commits are then appended as **new** commits.
 
-As a result of the rebase, the two branches have diverged. Your local branch's history has changed because the original commits are now new commits at the end. Therefore, both your local branch and the remote branch has advanced so Git cannot perform a fast-forward merge.
+As a result of rebasing, the two branches will have diverged. The local branch's history has changed because the original commits are now new commits at the end. Therefore, both the local branch and the remote branch has advanced so Git cannot perform a fast-forward merge.
 
-Since the changes from the rebase were intentionally, we can _force_ Git to ignore the state of the remote branch and just accept the commits from your local branch.
+Since the changes from the rebase were intentional, we can _force_ Git to ignore the state of the remote branch and just accept the commits from the local branch.
 
 As stated before, we need to be intentional when using the `-f` option since rewriting history can have huge implications on others working with the repository. It is recommended to only perform this operation on your own branch.
 
