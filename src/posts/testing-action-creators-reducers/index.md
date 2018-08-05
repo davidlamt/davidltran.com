@@ -64,8 +64,10 @@ This saves us from writing a redundant action creator test.
 
 ## Final Thoughts
 
-In my opinion, writing an individual action creator does not bring any value. An action creator should always, eventually, return an object. If we utilize that object in a reducer test, we are effectively validating that the resulting object is correct.
+In my opinion, writing an individual action creator test does not bring any value. An action creator should always, eventually, return an object. If we utilize an action creator in a reducer test, we are effectively validating that the resulting object is correct.
 
-However, it may just be that I do not have enough experience writing tests around applications using Redux yet. This leads me to the following phrase that I am trying to practice: **Strong opinions, loosely held**.
+However, it may just be that I do not have enough experience writing tests around applications using Redux yet. This leads me to the following idiom that I am trying to incorporate into my life: 
+
+**Strong opinions, loosely held**.
 
 Special thanks to [A. Sharif](https://medium.com/javascript-inside/some-thoughts-on-testing-react-redux-applications-8571fbc1b78f) for this and other useful testing concepts!
