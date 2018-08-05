@@ -4,15 +4,15 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.241",
+    "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-analytics": "^1.0.24",
     "gatsby-plugin-react-helmet": "^2.0.8",
-    "gatsby-plugin-sharp": "^1.6.41",
+    "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-plugin-styled-components": "^2.0.10",
     "gatsby-remark-images": "^1.5.59",
     "gatsby-remark-prismjs": "^1.2.21",
-    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.37",
     "react-helmet": "^5.2.0"
   },
