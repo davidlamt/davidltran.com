@@ -28,9 +28,9 @@ To install, just issue the following command in your terminal:
 
 We will be using [iTerm2](https://iterm2.com/) as our terminal emulator. I like it because it is pretty performant and customizable! Go ahead and download the application straight from their site.
 
-You will probably want to tweak the settings a bit to make it look how you want. We will add themes and plugins after we install our zsh but you can change the colors, fonts, etc. at this point. 
+You will probably want to tweak the settings a bit to make it look the way you want. We will add themes and plugins after we install zsh but you can change the colors, fonts, etc. at this point. 
 
-Also, as a personal preference, I changed the working directory of iTerm2 (the location where it starts up) to `/Users/davidtran/code`.
+I am currently using the [Fira Code](https://github.com/tonsky/FiraCode) font with ligatures. Also, as a personal preference, I changed the working directory of iTerm2 (the location where it starts up) to `/Users/davidtran/code`.
 
 [Here](https://gist.github.com/davidlamt/19355b211f4a7174ac48ab43aa86658b) is my current iTerm2 profile, if you are interested.
 
@@ -58,13 +58,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ### Theme
 
-The theme I am using is [Avit](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/avit.zsh-theme). It displays the current path (up to 3 previous directories). The current branch and its state (clean, dirty) is shown if the current directory is initialized with Git.
+The theme I am using is [Avit](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/avit.zsh-theme). It displays the current path (up to 3 previous directories). The current branch, its state (clean / dirty), and time since last commit is shown if the current directory is initialized with Git.
 
-Also, I especially appreciate how it provides a new line for every new command. I do not need to navigate the current line to see what I type which might consume a non-zero amount of energy. #smallwins
+Also, I especially appreciate how it provides a new line for every new command. I do not need to navigate the current line to see what I typed, which might consume a non-zero amount of energy. #smallwins
 
 This theme, along with [many others](https://github.com/robbyrussell/oh-my-zsh/wiki/themes), are installed along with Oh My Zsh. You can also install custom themes.
 
-To use the bundled themes, set `ZSH_THEME` to your theme of choice in `~/.zshrc`.
+To use a theme, set `ZSH_THEME` to your theme of choice in `~/.zshrc`.
 
 ```bash
 ZSH_THEME="avit"
@@ -93,5 +93,5 @@ plugins=(
 
 So far, I am enjoying using iTerm2. I was already familiar with zsh and Oh My Zsh from when I set it up on Windows but the installation and maintenance seems easier with a true Unix shell.
 
-I am also trying to utilize Vim full-time on personal projects, [again](/blog/vim-progress-update). Look out for a post on setting up vim and tmux!
+I am also trying to utilize Vim (with iTerm2) full-time on personal projects, [again](/blog/vim-progress-update). Look out for a post on setting up vim and tmux!
 
