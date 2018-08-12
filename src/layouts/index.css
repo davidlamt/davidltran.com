@@ -628,3 +628,7 @@ pre tt:after {
 #___gatsby {
   height: 100%
 }
+
+.gatsby-highlight {
+  margin-bottom: 1.45rem;
+}
