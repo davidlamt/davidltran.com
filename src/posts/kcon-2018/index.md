@@ -28,11 +28,11 @@ While I was happy that I did not have to make a trip back to our vehicle, the la
 
 This time around, we had the opportunity to enjoy the concert from one of the lounges or from general seating. 
 
-We did both. Before the concert started, we checked out the lounge and what it had to offer.
+We did both. Before the concert started, we checked out the lounge to see what it had to offer.
 
 ![KCON 2018 2](kcon-2018-2.jpg)
 
-The lounge had a pretty awesome view and "free" food and drinks. We took pictures to show off the view we had, ate some food, enjoyed a few drinks, and then headed down before the show started.
+The lounge had a pretty awesome view and "free" food and drinks. We took pictures to show off the view we had, ate some food, enjoyed a few drinks, and then headed down before the show began.
 
 ![KCON 2018 3](kcon-2018-3.jpg)
 
@@ -55,7 +55,9 @@ There was also a pre-show Taekwondo performance.
 
 ## Final Thoughts
 
-Like last year, I had a fantastic time at the convention and concert!
+Like last year, I had a fantastic time at the convention and concert! Although, to be honest, I am not sure we would have attended had it not been for the complimentary tickets.
+
+We did enjoy the event but we are not as invested in Korean culture as other activities. Nonetheless, we appreciated the opportunity and had a great time!
 
 Here's the part where I dump some photos of the event!
 
@@ -73,7 +75,7 @@ Here's the part where I dump some photos of the event!
 
 ![KCON 2018 10](kcon-2018-10.jpg)
 
-![KCON 2018 11](kcon-2018-12.jpg)
+![KCON 2018 11](kcon-2018-11.jpg)
 
 ![KCON 2018 12](kcon-2018-12.jpg)
 
