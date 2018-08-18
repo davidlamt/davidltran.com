@@ -2,11 +2,9 @@
 
 session="davidtranscend-com-gatsby-workspace"
 
-# Create new detached session
-tmux new-session -d -s $session
-
-# Main window
-tmux rename-window 'develop'
+# Create new detached session and start vim
+tmux new-session -d -n "develop" -s $session -x $(tput cols) -y $(tput lines)
+tmux send-keys "vim" C-m
 
 # Gatsby server pane
 tmux split-window -h -p 25
