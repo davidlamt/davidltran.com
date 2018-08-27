@@ -4,17 +4,17 @@ date: "2018-08-26"
 tags: ["development"]
 ---
 
-Recently, I ran into a situation where we needed to stringify an object's values to pass into Webpack's [DefinePlugin()](https://webpack.js.org/plugins/define-plugin/).
+Recently, I ran into a situation where we needed to stringify an object's values to pass into webpack's [DefinePlugin()](https://webpack.js.org/plugins/define-plugin/).
 
-In Lodash, there is a [mapValues()](https://webpack.js.org/plugins/define-plugin/) utility that will accomplish this. However, I found a way to achieve the same result using a bit of ES6.
+In Lodash, there is a [mapValues()](https://lodash.com/docs#mapValues) utility that will accomplish this. However, I found a way to achieve the same result using a bit of ES6.
 
 ## Solution
 
 ```js
 const yourObject = { /* ... */ };
-Object.entries(yourObject).reduce((person, [key, value]) => {
+Object.entries(yourObject).reduce((obj, [key, value]) => {
   // Do your stuff here...
-  return person;
+  return obj;
 }, {});
 ```
 
