@@ -22,7 +22,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 ```
 
-"Okay, good. I have commented all my code so that the next person can understand it well."
+"Okay, good. I have commented all my code so that the next person can understand it easily."
 
 Yeah... no. All I did was add superfluous comments that is more likely to confuse the next maintainer (possibly myself). My instinct when I see a comment is something along the lines of:
 
@@ -49,7 +49,7 @@ Seems clear enough to me. Although, not all source code is (or can be) inherentl
 
 In other words, **well-curated abstractions are multitudes better than poorly written code with well-intentioned comments**.
 
-Oh man, I'm on a row today with these pithy statements!
+Oh man, I am on a row today with these pithy statements!
 
 Check out the previous example with poorly named variables:
 
@@ -68,14 +68,14 @@ In my opinion, this is much more difficult to understand compared to the previou
 
 Source code **should** be self-documenting.
 
-Most of the time, proper abstractions should be sufficient. However, there are times where comments could be truly beneficial.
+Most of the time, proper abstractions should be sufficient. However, there are times when comments could be beneficial.
 
 I hesitate to say that comments are "necessary" at times. In almost all situations, the source code can be reorganized or rewritten to promote better abstractions rather than leaving comments.
 
-Although, the time and effort required to do so may be a luxury so comments are acceptable in these cases.
+Although, the time and effort required to do so may be a luxury so comments are acceptable in those cases.
 
 ## Final Thoughts
 
-This post is hugely inspired by the commenting section in Robert C Martin's [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). This book describes many ways in which you can become a better developer that I still abide by today.
+This post is hugely inspired by the chapter on code comments in Robert C Martin's [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). This book describes many ways in which you can become a better developer that I still abide by today.
 
-Also, check out some of these ["best comments"](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered#482129) others have encountered. A guaranteeed pick-me-up for those times when your code fails to work as intended.
+Also, check out some of the ["best comments"](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered#482129) others have encountered. A guaranteeed pick-me-up for those times when your code fails to work as intended.
