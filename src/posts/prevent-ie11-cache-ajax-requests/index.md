@@ -1,5 +1,5 @@
 ---
-title: "Preventing IE11 From Caching AJAX Requests"
+title: "Preventing IE11 from Caching AJAX Requests"
 date: "2018-10-15"
 tags: ["development"]
 ---
@@ -10,7 +10,7 @@ You may discover this issue when taking a look at the IE developer tool's Networ
 
 Or, more likely, you will spend hours stepping through source code trying to determine why your requests keep resulting in the same data even though you know it should be different.
 
-### Problem
+## Problem
 
 The issue is that certain IE11 versions cache AJAX requests and when it sees the same request being issued, it will just return the previous response even if the entity was modified on the server. Your subsequent requests will never actually hit the server.
 
@@ -60,10 +60,10 @@ const cacheBuster = {
 };
 ```
 
-The requests you send will still be cached but IE11 will not be able to reuse a response because every request is unique.
+The requests you send will still be cached but IE11 will not be able to reuse responses because every request is unique.
 
 ## Final Thoughts
 
-While I do not know the motivations of this implementation, I know for certain that this causes confusion in the developer community. Other browsers do not cache requests and we have come to expect the same of any browsers we developer for.
+While I do not know the motivations of this implementation, I know for certain that this causes confusion in the developer community. Other browsers do not cache requests and we have come to expect the same of any browsers we develop for.
 
 Whether this decision is a good or bad idea is up for debate. Change is a complex subject because it always be faced with criticism.
