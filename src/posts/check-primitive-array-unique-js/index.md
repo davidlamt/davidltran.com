@@ -4,11 +4,11 @@ date: "2018-10-21"
 tags: ["development"]
 ---
 
-Looking for a way to check verify that your primitive array does not contain duplicates without reaching for a third-party package?
+Looking for a way to verify that your primitive array does not contain duplicates without reaching for a third-party package?
 
-No problem, ES6 allows for a simple solution.
+No problem, ES6 provides a simple solution.
 
-Note: This solution only works for primitive arrays. For arrays containing objects, you may want to do a "deep" check using recursion.
+Note: This solution only works for primitive arrays. For arrays containing nested objects, you may want to do an additional "deep" check using recursion.
 
 ## Solution
 
@@ -30,13 +30,15 @@ const arr = [1, 2, 2, 3, 3];
 new Set(arr); // Set: [1, 2, 3]
 ```
 
-Finally, we check if the new Set's size is equal to the size of the original array. If the sizes are the same, this means that the original array is unique as no duplicates were removed.
+Finally, we check if the new Set's size is equal to the size of the original array. If the sizes are the same, this indicates that the original array is unique as no duplicates were removed.
 
 ```js
 const arr = [1, 2, 3]; // length: 3
-const set = new Set(arr); // size: 3
+const set = new Set(arr); // Set: [1,2,3] size: 3
 isUnique = set.size === arr.length; // true
 ```
+
+Note that we use the `size` property to check for the Set's _size_ while arrays use `length`.
 
 ## Final Thoughts
 
