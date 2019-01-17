@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ from 'lodash';
 import PropTypes from 'prop-types';
