@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
+import Layout from '../components/Layout';
+
 import PostListing from '../components/PostListing';
 
 const ArchivesPage = styled.div`
@@ -65,24 +67,26 @@ export default class Archives extends Component {
     const years = Object.keys(groups).sort((a, b) => b - a);
 
     return (
-      <ArchivesPage>
-        <h1>Archives</h1>
-        {_.map(years, year => (
-          <div className="group" key={year}>
-            <h2>{year}</h2>
-            <ul>
-              {groups[year].map(({ node: post }) => (
-                <PostListing
-                  key={post.id}
-                  slug={post.fields.slug}
-                  title={post.frontmatter.title}
-                  date={post.frontmatter.date}
-                />
-              ))}
-            </ul>
-          </div>
-        ))}
-      </ArchivesPage>
+      <Layout>
+        <ArchivesPage>
+          <h1>Archives</h1>
+          {_.map(years, year => (
+            <div className="group" key={year}>
+              <h2>{year}</h2>
+              <ul>
+                {groups[year].map(({ node: post }) => (
+                  <PostListing
+                    key={post.id}
+                    slug={post.fields.slug}
+                    title={post.frontmatter.title}
+                    date={post.frontmatter.date}
+                  />
+                ))}
+              </ul>
+            </div>
+          ))}
+        </ArchivesPage>
+      </Layout>
     );
   }
 }
