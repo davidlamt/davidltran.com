@@ -1,16 +1,19 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+
+import Layout from '../components/Layout';
 
 import Introduction from '../components/Introduction';
 import Projects from '../components/Projects';
 import Posts from '../components/Posts';
 
 const IndexPage = ({ data }) => (
-  <div>
+  <Layout>
     <Introduction />
     <Posts numberOfPostsToShow={5} posts={data.allMarkdownRemark.edges} />
     <Projects />
-  </div>
+  </Layout>
 );
 
 IndexPage.propTypes = {
