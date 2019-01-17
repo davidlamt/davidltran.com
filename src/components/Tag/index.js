@@ -38,7 +38,7 @@ export default class Tag extends Component {
         ),
       }),
     }),
-    pathContext: PropTypes.shape({
+    pageContext: PropTypes.shape({
       tag: PropTypes.string,
     }),
   };
@@ -62,7 +62,7 @@ export default class Tag extends Component {
         ],
       },
     },
-    pathContext: {
+    pageContext: {
       tag: 'default',
     },
   };
@@ -77,7 +77,7 @@ export default class Tag extends Component {
   render() {
     const {
       data,
-      pathContext: { tag },
+      pageContext: { tag },
     } = this.props;
 
     const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
