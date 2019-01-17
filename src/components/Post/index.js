@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+import Layout from '../Layout';
 
 const PostContainer = styled.div`
   h1 {
@@ -112,24 +114,26 @@ export default class PostPage extends Component {
     const { data } = this.props;
 
     return (
-      <PostContainer>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
+      <Layout>
+        <PostContainer>
+          <h1>{data.markdownRemark.frontmatter.title}</h1>
 
-        <PostMeta>
-          <span className="date">{data.markdownRemark.frontmatter.date}</span>
-          <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-            <path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z" />
-          </svg>
-          <ul>{data.markdownRemark.frontmatter.tags.map(tag => this.generateTag(tag))}</ul>
-        </PostMeta>
+          <PostMeta>
+            <span className="date">{data.markdownRemark.frontmatter.date}</span>
+            <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+              <path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z" />
+            </svg>
+            <ul>{data.markdownRemark.frontmatter.tags.map(tag => this.generateTag(tag))}</ul>
+          </PostMeta>
 
-        <PostMarkdown
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html: data.markdownRemark.html,
-          }}
-        />
-      </PostContainer>
+          <PostMarkdown
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html,
+            }}
+          />
+        </PostContainer>
+      </Layout>
     );
   }
 }

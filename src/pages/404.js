@@ -1,6 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+
+import Layout from '../components/Layout';
 
 const WarningContainer = styled.div`
   a {
@@ -19,11 +21,13 @@ const WarningContainer = styled.div`
 `;
 
 const NotFoundPage = () => (
-  <WarningContainer>
-    <h1>Page Not Found</h1>
-    <p>Looks like you have followed a broken link or entered a URL that does not exist on this site.</p>
-    <Link to="/">Take me back to the home page.</Link>
-  </WarningContainer>
+  <Layout>
+    <WarningContainer>
+      <h1>Page Not Found</h1>
+      <p>Looks like you have followed a broken link or entered a URL that does not exist on this site.</p>
+      <Link to="/">Take me back to the home page.</Link>
+    </WarningContainer>
+  </Layout>
 );
 
 export default NotFoundPage;
