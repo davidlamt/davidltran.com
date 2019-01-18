@@ -10,16 +10,17 @@ import './index.css';
 require('prismjs/themes/prism.css');
 
 const HomeContainer = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1.45rem;
+  max-width: 40rem;
+  height: 100%;
 `;
 
 const Content = styled.div`
   margin: 0 auto;
-  max-width: 40rem;
   width: 100%;
-  padding: 0px 1.0875rem 1.45rem;
   flex: 1;
 `;
 
