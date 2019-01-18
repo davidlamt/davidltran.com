@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 
 import Layout from '../Layout';
 
+const BASE_REPO_URL = 'https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/src/posts';
+
 const PostContainer = styled.div`
   h1 {
     margin-bottom: 0.5rem;
@@ -12,6 +14,20 @@ const PostContainer = styled.div`
 
   a.gatsby-resp-image-link {
     border-bottom: none;
+  }
+
+  a:not(.gatsby-resp-image-link):not(.anchor) {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 0px 0px #cee6f9;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #cee6f9;
+    padding-top: 2px;
+
+    :active,
+    :hover {
+      background: #cee6f9;
+    }
   }
 `;
 
@@ -40,39 +56,11 @@ const PostMeta = styled.div`
 
     li {
       margin: 0 0.5rem 0 0;
-
-      a {
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 2px 0px 0px #cee6f9;
-        color: #333;
-        text-decoration: none;
-        border-bottom: 1px solid #cee6f9;
-        padding-top: 2px;
-
-        :active,
-        :hover {
-          background: #cee6f9;
-        }
-      }
     }
   }
 `;
 
 const PostMarkdown = styled.div`
-  a:not(.gatsby-resp-image-link) {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 0px 0px #cee6f9;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #cee6f9;
-    padding-top: 2px;
-
-    :active,
-    :hover {
-      background: #cee6f9;
-    }
-  }
-
   code:before,
   code:after,
   tt:before,
@@ -89,6 +77,7 @@ export default class PostPage extends Component {
         tags: PropTypes.arrayOf(PropTypes.String),
         title: PropTypes.string,
       }),
+      fileAbsolutePath: PropTypes.string,
       html: PropTypes.string,
     }),
   };
@@ -100,6 +89,7 @@ export default class PostPage extends Component {
         tags: ['default'],
         title: 'Default Title',
       },
+      fileAbsolutePath: 'post/index.md',
       html: '<p>Default HTML</p>',
     },
   };
@@ -112,12 +102,16 @@ export default class PostPage extends Component {
 
   render() {
     const { data } = this.props;
+    const fileRelativePath = data.markdownRemark.fileAbsolutePath
+      .split('/')
+      .slice(-2)
+      .join('/');
+    const fileURL = `${BASE_REPO_URL}/${fileRelativePath}`;
 
     return (
       <Layout>
         <PostContainer>
           <h1>{data.markdownRemark.frontmatter.title}</h1>
-
           <PostMeta>
             <span className="date">{data.markdownRemark.frontmatter.date}</span>
             <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -125,13 +119,15 @@ export default class PostPage extends Component {
             </svg>
             <ul>{data.markdownRemark.frontmatter.tags.map(tag => this.generateTag(tag))}</ul>
           </PostMeta>
-
           <PostMarkdown
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html,
             }}
           />
+          <em>
+            Noticed a mistake in this post? Feel free to <a href={fileURL}>submit a pull request</a>!
+          </em>
         </PostContainer>
       </Layout>
     );
@@ -141,6 +137,7 @@ export default class PostPage extends Component {
 export const query = graphql`
   query BlogPostQuery($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      fileAbsolutePath
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
