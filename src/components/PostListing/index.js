@@ -3,31 +3,33 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const PostListingContainer = styled.li`
-  span {
-    color: #aaa;
-    margin-right: 1rem;
-  }
-
-  a {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 0px 0px #cee6f9;
+const PostListingContainer = styled(Link)`
+  border-radius: 5px;
     color: #333;
+  display: block;
+  margin-left: -10px;
+  padding: 10px;
     text-decoration: none;
-    border-bottom: 1px solid #cee6f9;
-    padding-top: 2px;
+  transition: background-color 0.2s linear;
+  width: 100%;
 
-    :active,
-    :hover {
-      background: #cee6f9;
-    }
+  &:hover {
+    background-color: #f5f5f5;
   }
 `;
 
+const PostTitle = styled.div`
+  font-weight: 500;
+`;
+
+const PostDate = styled.div`
+  font-size: 0.9em;
+`;
+
 const PostListing = ({ slug, title, date }) => (
-  <PostListingContainer>
-    <span>{date}</span>
-    <Link to={slug}>{title}</Link>
+  <PostListingContainer to={slug}>
+    <PostTitle>{title}</PostTitle>
+    <PostDate>{date}</PostDate>
   </PostListingContainer>
 );
 

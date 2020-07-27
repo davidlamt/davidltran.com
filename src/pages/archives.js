@@ -11,6 +11,7 @@ import PostListing from '../components/PostListing';
 const ArchivesPage = styled.div`
   ul {
     list-style: none;
+    margin-left: 0;
   }
 
   .group {
@@ -103,7 +104,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
