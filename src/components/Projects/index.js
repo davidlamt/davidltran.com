@@ -6,9 +6,6 @@ const ProjectsSection = styled.div`
     line-height: 1.1;
     font-weight: bold;
     font-size: 2.25rem;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    text-rendering: optimizeLegibility;
     color: #0984e3;
 
     a {
@@ -44,8 +41,8 @@ const Projects = () => (
     </span>
     <ul>
       <li>
-        <a href="https://antfinder.herokuapp.com/">AntFinder</a>: An organized marketplace for UCI students to advertise
-        and purchase various goods.
+        <a href="https://antfinder.herokuapp.com/">AntFinder</a>: An organized
+        marketplace for UCI students to advertise and purchase various goods.
       </li>
     </ul>
   </ProjectsSection>

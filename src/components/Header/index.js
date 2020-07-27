@@ -17,9 +17,6 @@ const HeaderContainer = styled.div`
     font-size: 2.25rem;
     line-height: 1.1;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    text-rendering: optimizeLegibility;
 
     a {
       color: #333;

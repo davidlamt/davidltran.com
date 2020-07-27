@@ -12,9 +12,6 @@ const PostsSection = styled.div`
     line-height: 1.1;
     font-weight: bold;
     font-size: 2.25rem;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-      Helvetica Neue, sans-serif;
-    text-rendering: optimizeLegibility;
     color: #0984e3;
 
     a {
