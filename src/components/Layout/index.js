@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
   flex-direction: column;
   margin: 0 auto;
   padding: 0 1.45rem;
-  max-width: 40rem;
+  max-width: 42rem;
   height: 100%;
 `;
 
@@ -30,7 +30,11 @@ const TemplateWrapper = ({ children }) => (
       title="David Tran"
       meta={[
         { name: 'description', content: "David Tran's Personal Site" },
-        { name: 'keywords', content: 'Software Development, Personal Thoughts, Offline Adventures' },
+        {
+          name: 'keywords',
+          content:
+            'Software Development, Personal Thoughts, Offline Adventures',
+        },
       ]}
     />
     <Header />
