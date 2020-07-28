@@ -65,7 +65,9 @@ export default class Archives extends Component {
   render() {
     const { data } = this.props;
 
-    const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) => new Date(node.frontmatter.date).getFullYear());
+    const groups = _.groupBy(data.allMarkdownRemark.edges, ({ node }) =>
+      new Date(node.frontmatter.date).getFullYear()
+    );
     const years = Object.keys(groups).sort((a, b) => b - a);
 
     return (
@@ -82,6 +84,7 @@ export default class Archives extends Component {
                     slug={post.fields.slug}
                     title={post.frontmatter.title}
                     date={post.frontmatter.date}
+                    tags={post.frontmatter.tags}
                   />
                 ))}
               </ul>
@@ -105,6 +108,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }

@@ -40,6 +40,7 @@ const Posts = ({ posts, numberOfPostsToShow }) => (
               slug={post.fields.slug}
               title={post.frontmatter.title}
               date={post.frontmatter.date}
+              tags={post.frontmatter.tags}
             />
           );
         }
@@ -58,6 +59,7 @@ Posts.propTypes = {
         frontmatter: PropTypes.shape({
           title: PropTypes.string.isRequired,
           date: PropTypes.string.isRequired,
+          tags: PropTypes.arrayOf(PropTypes.string),
         }),
       }),
     })
@@ -73,6 +75,7 @@ Posts.defaultProps = {
         frontmatter: {
           title: 'Default Title',
           date: '1970-01-01',
+          tags: ['Tag'],
         },
       },
     },

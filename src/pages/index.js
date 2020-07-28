@@ -29,6 +29,7 @@ IndexPage.propTypes = {
             frontmatter: PropTypes.shape({
               title: PropTypes.string,
               date: PropTypes.string,
+              tags: PropTypes.arrayOf(PropTypes.string),
             }),
           }),
         })
@@ -50,6 +51,7 @@ IndexPage.defaultProps = {
             frontmatter: {
               title: 'Default Title',
               date: '1970-01-01',
+              tags: ['Tag'],
             },
           },
         },
@@ -72,6 +74,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            tags
           }
         }
       }
