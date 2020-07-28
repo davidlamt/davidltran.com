@@ -1,6 +1,6 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 
@@ -8,76 +8,28 @@ import Introduction from '../components/Introduction';
 import Projects from '../components/Projects';
 import Posts from '../components/Posts';
 
-const IndexPage = ({ data }) => (
+const SectionHeader = styled.div`
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #0984e3;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+`;
+
+const IndexPage = () => (
   <Layout>
     <Introduction />
-    <Posts numberOfPostsToShow={5} posts={data.allMarkdownRemark.edges} />
+    <SectionHeader>
+      <Link to="/archives">Writing</Link>
+    </SectionHeader>
+    <Posts numberOfPostsToShow={5} />
     <Projects />
   </Layout>
 );
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            id: PropTypes.string,
-            fields: PropTypes.shape({
-              slug: PropTypes.string,
-            }),
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string,
-              date: PropTypes.string,
-              tags: PropTypes.arrayOf(PropTypes.string),
-            }),
-          }),
-        })
-      ),
-    }),
-  }),
-};
-
-IndexPage.defaultProps = {
-  data: {
-    allMarkdownRemark: {
-      edges: [
-        {
-          node: {
-            id: 'Default',
-            fields: {
-              slug: '/default/',
-            },
-            frontmatter: {
-              title: 'Default Title',
-              date: '1970-01-01',
-              tags: ['Tag'],
-            },
-          },
-        },
-      ],
-    },
-  },
-};
-
 export default IndexPage;
-
-export const query = graphql`
-  query PostsQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            tags
-          }
-        }
-      }
-    }
-  }
-`;
