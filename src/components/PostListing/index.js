@@ -26,6 +26,7 @@ const PostTitle = styled.div`
 
 const PostDate = styled.div`
   font-size: 0.8em;
+  margin-top: 5px;
 `;
 
 const PostListing = ({ slug, title, date, tags }) => (

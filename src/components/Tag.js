@@ -21,7 +21,9 @@ const TagLabel = styled.span`
   border-radius: 5px;
   color: ${props =>
     tagForegroundColor[props.tagName] || defaultForegroundColor};
+  display: inline-block;
   font-size: 0.8em;
+  margin-top: 8px;
   padding: 3px 5px;
 
   &:not(:last-child) {
