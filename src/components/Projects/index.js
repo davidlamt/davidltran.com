@@ -2,18 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProjectsSection = styled.div`
-  span {
-    line-height: 1.1;
-    font-weight: bold;
-    font-size: 2.25rem;
-    color: #0984e3;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-  }
-
   ul {
     margin: 20px 0 0 0;
     list-style: none;
@@ -36,9 +24,6 @@ const ProjectsSection = styled.div`
 
 const Projects = () => (
   <ProjectsSection>
-    <span>
-      <a href="https://github.com/davidlamt">Projects</a>
-    </span>
     <ul>
       <li>
         <a href="https://antfinder.herokuapp.com/">AntFinder</a>: An organized
