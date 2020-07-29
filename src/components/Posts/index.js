@@ -42,9 +42,8 @@ const Posts = ({ numberOfPostsToShow }) => {
             {posts.map(({ node: post }, index) => {
               if (!numberOfPostsToShow || index < numberOfPostsToShow) {
                 return (
-                  <li>
+                  <li key={post.id}>
                     <PostListing
-                      key={post.id}
                       slug={post.fields.slug}
                       title={post.frontmatter.title}
                       date={post.frontmatter.date}
