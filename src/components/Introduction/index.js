@@ -4,20 +4,6 @@ import styled from 'styled-components';
 const IntroductionSection = styled.div`
   margin-bottom: 3rem;
 
-  a {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 0px 0px #cee6f9;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #cee6f9;
-    padding-top: 2px;
-
-    :active,
-    :hover {
-      background: #cee6f9;
-    }
-  }
-
   .svg {
     box-shadow: none;
     border-bottom: none;
@@ -32,17 +18,18 @@ const IntroductionSection = styled.div`
 
 const Introduction = () => (
   <IntroductionSection>
-    <p>Hi there, I'm David.</p>
+    <p>Hi there, I&#39;m David.</p>
 
     <p>
       I am currently tackling interesting problems as a Web Developer at{' '}
-      <a href="https://www.tigertext.com/">TigerConnect</a>, a company developing secure communication platforms for the
-      healthcare industry.
+      <a href="https://tigerconnect.com/">TigerConnect</a>, a company developing
+      secure communication platforms for the healthcare industry.
     </p>
 
     <p>
-      When I am not glued to a computer screen, you can find me enjoying food, exercising, reading, and traveling. I am
-      a lifelong learner, an avid podcast listener, and an enthusiast of books of all genres.
+      When I am not glued to a computer screen, you can find me enjoying food,
+      exercising, reading, and traveling. I am a lifelong learner, an avid
+      podcast listener, and an enthusiast of books of all genres.
     </p>
 
     <p>My current weapons of choice include JavaScript, React, and Gatsby.</p>
@@ -59,11 +46,13 @@ const Introduction = () => (
         <svg width="20" height="20" viewBox="0 0 1792 1792">
           <path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z" />
         </svg>
-      </a>. You can find some of the tools I use <a href="/uses">here</a>.
+      </a>
+      . You can find some of the tools I use <a href="/uses">here</a>.
     </p>
 
     <p>
-      Want to get in touch? You can reach me via <a href="mailto:davidlamt@gmail.com">email.</a>
+      Want to get in touch? You can reach me via{' '}
+      <a href="mailto:davidlamt@gmail.com">email.</a>
     </p>
 
     <p>All thoughts and opinions expressed are my own.</p>

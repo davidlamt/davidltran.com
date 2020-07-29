@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 import Layout from '../Layout';
 
-const BASE_REPO_URL = 'https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/src/posts';
+const BASE_REPO_URL =
+  'https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/src/posts';
 
 const PostContainer = styled.div`
   h1 {
@@ -14,20 +15,6 @@ const PostContainer = styled.div`
 
   a.gatsby-resp-image-link {
     border-bottom: none;
-  }
-
-  a:not(.gatsby-resp-image-link):not(.anchor) {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 0px 0px #cee6f9;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid #cee6f9;
-    padding-top: 2px;
-
-    :active,
-    :hover {
-      background: #cee6f9;
-    }
   }
 `;
 
@@ -114,10 +101,19 @@ export default class PostPage extends Component {
           <h1>{data.markdownRemark.frontmatter.title}</h1>
           <PostMeta>
             <span className="date">{data.markdownRemark.frontmatter.date}</span>
-            <svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 1792 1792"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z" />
             </svg>
-            <ul>{data.markdownRemark.frontmatter.tags.map(tag => this.generateTag(tag))}</ul>
+            <ul>
+              {data.markdownRemark.frontmatter.tags.map(tag =>
+                this.generateTag(tag)
+              )}
+            </ul>
           </PostMeta>
           <PostMarkdown
             // eslint-disable-next-line react/no-danger
@@ -126,7 +122,8 @@ export default class PostPage extends Component {
             }}
           />
           <em>
-            Noticed a mistake in this post? Feel free to <a href={fileURL}>submit a pull request</a>!
+            Noticed a mistake in this post? Feel free to{' '}
+            <a href={fileURL}>submit a pull request</a>!
           </em>
         </PostContainer>
       </Layout>
