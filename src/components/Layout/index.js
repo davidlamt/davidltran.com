@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import Header from '../Header';
-import Footer from '../Footer';
+import { Footer, Header } from '../';
 import './index.css';
 
 require('prismjs/themes/prism.css');
