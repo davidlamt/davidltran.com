@@ -19,7 +19,7 @@ const IntroductionSection = styled.div`
 
 const Introduction = () => (
   <IntroductionSection>
-    <p>Hi there, I&#39;m David.</p>
+    <h1>👋 Hey there, I&#39;m David!</h1>
 
     <p>
       I am currently tackling interesting problems as a Web Developer at{' '}

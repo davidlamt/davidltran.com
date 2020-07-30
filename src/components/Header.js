@@ -2,55 +2,49 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const HeaderWrapper = styled.div`
-  background: #fff;
-  margin-top: 2rem;
+const HeaderContainer = styled.header`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding-top: 3.45rem;
 `;
 
-const HeaderContainer = styled.div`
-  margin: 0 auto;
-  padding-top: 1.45rem;
+const HeaderName = styled(Link)`
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.1;
 
-  span {
-    margin: 0;
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 1.1;
-    padding: 0;
-
-    a {
-      color: #333;
-      text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
   }
 `;
 
 const MainNavigation = styled.nav`
-  margin-top: 1rem;
-
   ul {
-    margin-left: 1px;
-    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 1px;
 
     li {
-      margin-right: 15px;
-      padding-right: 15px;
-      border-right: 1px dotted #0984e3;
+      margin: 0 5px;
 
-      :last-child {
-        border-right: none;
+      @media (max-width: 450px) {
+        margin: 0;
       }
 
       a {
-        color: #0984e3;
-        text-decoration: none;
+        border-radius: 5px;
+        color: #333;
+        padding: 10px;
+        transition: background-color 0.2s linear;
 
-        :active,
-        :hover {
-          border-bottom: 1px solid #0984e3;
+        &:hover {
+          background-color: #f5f5f5;
+          text-decoration: none;
         }
       }
     }
@@ -58,26 +52,22 @@ const MainNavigation = styled.nav`
 `;
 
 const Header = () => (
-  <HeaderWrapper>
-    <HeaderContainer>
-      <span>
-        <Link to="/">David Tran</Link>
-      </span>
-      <MainNavigation>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/archives">Writing</Link>
-          </li>
-          <li>
-            <a href="https://github.com/davidlamt">Projects</a>
-          </li>
-        </ul>
-      </MainNavigation>
-    </HeaderContainer>
-  </HeaderWrapper>
+  <HeaderContainer>
+    <HeaderName to="/">David Tran</HeaderName>
+    <MainNavigation>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/archives">Writing</Link>
+        </li>
+        <li>
+          <a href="https://github.com/davidlamt">Projects</a>
+        </li>
+      </ul>
+    </MainNavigation>
+  </HeaderContainer>
 );
 
 export default Header;
