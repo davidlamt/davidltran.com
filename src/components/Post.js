@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 

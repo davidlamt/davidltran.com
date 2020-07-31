@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true, // Allows for the use of predefined global variables for browsers (document, window, etc.)
+    es6: true, // Allows for the use of ES6 global variables (Promise, Set, etc.)
     jest: true, // Allows for the use of predefined global variables for Jest (describe, test, etc.)
     node: true, // Allows for the use of predefined global variables for Node.js (module, process, etc.)
   },
