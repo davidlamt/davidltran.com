@@ -23,7 +23,7 @@ exports.onCreateNode = ({ actions, getNode, node }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const postTemplate = path.resolve('./src/components/Post/index.js');
+  const postTemplate = path.resolve('./src/components/Post.js');
   const tagTemplate = path.resolve('./src/components/Tag/index.js');
 
   return new Promise((resolve, reject) => {

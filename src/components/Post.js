@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Layout from '../Layout';
+import Layout from './Layout';
 
 const BASE_REPO_URL =
   'https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/src/posts';
@@ -56,28 +56,32 @@ const PostMarkdown = styled.div`
   }
 `;
 
-export default class PostPage extends Component {
+export default class Post extends Component {
   static propTypes = {
     data: PropTypes.shape({
       markdownRemark: PropTypes.shape({
-        date: PropTypes.string,
-        tags: PropTypes.arrayOf(PropTypes.String),
-        title: PropTypes.string,
+        fileAbsolutePath: PropTypes.string,
+        frontmatter: PropTypes.shape({
+          date: PropTypes.string,
+          tags: PropTypes.arrayOf(PropTypes.string),
+          title: PropTypes.string,
+        }),
+        html: PropTypes.string,
       }),
-      fileAbsolutePath: PropTypes.string,
-      html: PropTypes.string,
     }),
   };
 
   static defaultProps = {
     data: {
       markdownRemark: {
-        date: '1970-01-01',
-        tags: ['default'],
-        title: 'Default Title',
+        fileAbsolutePath: 'post/index.md',
+        frontmatter: {
+          date: '1970-01-01',
+          tags: ['default'],
+          title: 'Default Title',
+        },
+        html: '<p>Default HTML</p>',
       },
-      fileAbsolutePath: 'post/index.md',
-      html: '<p>Default HTML</p>',
     },
   };
 
