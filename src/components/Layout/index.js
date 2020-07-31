@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Footer, Header } from '../';
 import './index.css';
 
-require('prismjs/themes/prism.css');
+require('prismjs/themes/prism-okaidia.css');
 
 const HomeContainer = styled.div`
   display: flex;
