@@ -1,7 +1,8 @@
 ---
 title: "Flexing JavaScript Muscles"
 date: "2018-02-18"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["javascript", "thoughts"]
 ---
 
 What muscles?

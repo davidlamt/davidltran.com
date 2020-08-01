@@ -1,7 +1,8 @@
 ---
 title: "Migrating to Gatsby and Netlify"
 date: "2018-03-27"
-tags: ["thoughts"]
+categories: ["Development"]
+tags: ["gatsby", "netlify"]
 ---
 
 Migrating the blog [again](/blog/migrating-from-wordpress-to-hugo)??

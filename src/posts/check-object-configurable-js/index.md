@@ -1,7 +1,8 @@
 ---
 title: "Checking If Object Property Is Configurable in JavaScript"
 date: "2018-05-06"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Until recently, I did not realize that object properties could behave differently based on their descriptors.

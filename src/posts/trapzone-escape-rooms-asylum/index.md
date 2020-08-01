@@ -1,7 +1,8 @@
 ---
 title: "TrapZone Escape Rooms: Asylum"
 date: "2017-10-22"
-tags: ["offline"]
+categories: ["Personal"]
+tags: ["experiences"]
 ---
 
 I just had the most fun I have had in a while.

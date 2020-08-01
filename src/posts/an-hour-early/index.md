@@ -1,6 +1,7 @@
 ---
 title: "An Hour Early"
 date: "2017-10-08"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

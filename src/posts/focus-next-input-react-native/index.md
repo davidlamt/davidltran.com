@@ -1,7 +1,8 @@
 ---
 title: "Focusing Next Input in React Native"
 date: "2018-07-12"
-tags: ["development"]
+categories: ["Development"]
+tags: ["react native"]
 ---
 
 By default, the React Native [TextInput](https://facebook.github.io/react-native/docs/textinput.html) component does not automatically focus the next one once you hit "enter" on your virtual keyboard.

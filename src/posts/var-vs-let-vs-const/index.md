@@ -1,7 +1,8 @@
 ---
 title: "var vs let vs const: Why I Default to Using const"
 date: "2017-04-23"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["javascript", "thoughts"]
 ---
 
 While the main focus of this post will be on `var` vs `let` vs `const`, let’s first examine their backstories.

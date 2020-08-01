@@ -1,7 +1,8 @@
 ---
 title: "How to Run a Script on Boot Using rc.d with Linux"
 date: "2017-08-27"
-tags: ["development"]
+categories: ["Development"]
+tags: ["scripting"]
 ---
 
 Recently, I have been helping out with a standalone payment peripheral at work. This is a product that will provide merchants the ability to complete an entire transaction, including PIN and signature, on a single device.

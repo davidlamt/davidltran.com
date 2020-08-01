@@ -1,7 +1,8 @@
 ---
 title: "Const Does Not Mean Immutable in JavaScript"
 date: "2018-05-07"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["javascript", "thoughts"]
 ---
 
 I believe the `const` variable declaration keyword in JavaScript is a bit misleading. It is easy to interpret variables declared with `const` as *constants*.

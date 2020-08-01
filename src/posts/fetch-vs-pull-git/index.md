@@ -1,7 +1,8 @@
 ---
 title: "Fetch vs Pull in Git"
 date: "2018-05-21"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 A `git fetch` is actually automatically performed when you run `git pull`. Why would you ever use a fetch command then?

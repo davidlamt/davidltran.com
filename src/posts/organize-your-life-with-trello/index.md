@@ -1,6 +1,7 @@
 ---
 title: "Organizing My Life with Trello"
 date: "2017-06-25"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

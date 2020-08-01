@@ -1,7 +1,8 @@
 ---
 title: "Refactoring Java Native Interface Code"
 date: "2017-07-09"
-tags: ["development"]
+categories: ["Development"]
+tags: ["java"]
 ---
 
 I recently had the opportunity to revisit code I wrote a few months ago.

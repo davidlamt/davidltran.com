@@ -1,7 +1,8 @@
 ---
 title: "Generating a Range of Numbers in JavaScript"
 date: "2018-05-20"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Have you ever wanted to generate a range of numbers in JavaScript from 0 to a specified bound?

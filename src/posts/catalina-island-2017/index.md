@@ -1,7 +1,8 @@
 ---
 title: "Three Year Anniversary on Catalina Island"
 date: "2017-07-02"
-tags: ["offline"]
+categories: ["Personal"]
+tags: ["travels"]
 ---
 
 ![Catalina Island Anniversary](/catalina-island-anniversary.jpg)

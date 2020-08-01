@@ -1,7 +1,8 @@
 ---
 title: "What Is A Bit?"
 date: "2017-04-09"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["bits"]
 ---
 
 I recently discovered that bit is actually an abbreviation for **binary digit**. But that does not really answer the question of what is a bit, does it? First and foremost, binary refers to a system that is composed of or involves two elements. Therefore, we can deduce that a binary digit (bit) is a digit that can contain one of two states. This is an abstract and crude interpretation but I believe it explains the concept, in words, quite well.

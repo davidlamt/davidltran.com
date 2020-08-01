@@ -1,7 +1,8 @@
 ---
 title: "How to Create an Archives Page with Hugo"
 date: "2017-09-10"
-tags: ["development"]
+categories: ["Development"]
+tags: ["hugo"]
 ---
 
 *Note*: I have migrated this blog to [Gatsby](/blog/migrating-to-gatsby-and-netlify)!

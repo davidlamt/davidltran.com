@@ -1,7 +1,8 @@
 ---
 title: "Returning a String in C"
 date: "2017-05-28"
-tags: ["development"]
+categories: ["Development"]
+tags: ["c"]
 ---
 
 Hello, I am here to show you how to return a string from a C function.

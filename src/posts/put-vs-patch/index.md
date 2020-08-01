@@ -1,7 +1,8 @@
 ---
 title: "PUT vs PATCH: What Is the Difference?"
 date: "2017-06-18"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["http", "thoughts"]
 ---
 
 I have been working with some colleagues on a web API that can be used to provide more support to customers who use our devices.

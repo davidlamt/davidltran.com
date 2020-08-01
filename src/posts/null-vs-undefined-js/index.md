@@ -1,7 +1,8 @@
 ---
 title: "null vs undefined in Javascript"
 date: "2018-05-14"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["javascript", "thoughts"]
 ---
 
 What are the differences between these two seemingly interchangeable constructs?

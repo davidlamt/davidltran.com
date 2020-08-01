@@ -1,7 +1,8 @@
 ---
 title: "What Is Version Control: Centralized vs Distributed"
 date: "2017-04-16"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 “Why do I need version control?”

@@ -1,7 +1,8 @@
 ---
 title: "Do Not Split up React's Render Method"
 date: "2018-05-13"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["react", "thoughts"]
 ---
 
 WAIT. Before I get lynched, I am not advocating against abstractions and maintainabiltiy. Please read a bit further before deciding to slaughter me.

@@ -1,7 +1,8 @@
 ---
 title: "Script Execution on Startup with Environment Variables"
 date: "2017-10-15"
-tags: ["development"]
+categories: ["Development"]
+tags: ["scripting"]
 ---
 
 In a [previous post](/blog/run-script-on-boot-using-rcd), I discussed how to have to a script execute on startup on a system that uses the System V init system.

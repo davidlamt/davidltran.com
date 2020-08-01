@@ -1,7 +1,8 @@
 ---
 title: "Shallow Object to Array Conversion in JavaScript"
 date: "2018-07-05"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Let's say you have an object and you wish to convert it into an array.

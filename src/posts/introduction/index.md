@@ -1,7 +1,8 @@
 ---
 title: "console.log(\"Hello, world!\");"
 date: "2017-03-26"
-tags: ["thoughts"]
+categories: ["Development"]
+tags: ["bits"]
 ---
 
 It is often recommended that one writes a "hello world" program when learning a new programming language but the reasoning behind that endorsement is often neglected.

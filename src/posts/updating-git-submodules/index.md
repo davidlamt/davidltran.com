@@ -1,7 +1,8 @@
 ---
 title: "Updating Git Submodules"
 date: "2017-11-05"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 A [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) is a reference to another project.

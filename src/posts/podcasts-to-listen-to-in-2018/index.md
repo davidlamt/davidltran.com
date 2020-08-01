@@ -1,7 +1,8 @@
 ---
 title: "Podcasts to Listen to in 2018: A Software Developer’s Perspective"
 date: "2018-01-28"
-tags: ["thoughts"]
+categories: ["Personal"]
+tags: ["podcasts"]
 ---
 
 Hello, devoted readers. Rejoice as I am still alive!

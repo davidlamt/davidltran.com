@@ -1,7 +1,8 @@
 ---
 title: "Vim Progress Update"
 date: "2017-10-29"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts", "vim"]
 ---
 
 I began my Vim journey a [while back](/blog/using-vim-for-a-week).

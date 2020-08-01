@@ -51,7 +51,7 @@ PostListing.defaultProps = {
   slug: '/default/',
   title: 'Default Title',
   date: '1970-01-01',
-  tags: ['Tag'],
+  tags: ['tag'],
 };
 
 export default PostListing;

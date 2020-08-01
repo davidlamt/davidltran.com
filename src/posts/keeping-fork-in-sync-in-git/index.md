@@ -1,7 +1,8 @@
 ---
 title: "Keeping a Fork in Sync in Git"
 date: "2017-09-24"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 Recently, a coworker asked me to help him undestand his team's Git workflow.

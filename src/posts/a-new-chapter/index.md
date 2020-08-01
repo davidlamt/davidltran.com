@@ -1,6 +1,7 @@
 ---
 title: "A New Chapter"
 date: "2018-03-28"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

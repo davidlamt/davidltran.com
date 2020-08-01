@@ -1,6 +1,7 @@
 ---
 title: "A Year Without Social Media"
 date: "2017-11-19"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

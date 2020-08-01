@@ -1,6 +1,7 @@
 ---
 title: "A Sleep Experiment"
 date: "2018-02-11"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

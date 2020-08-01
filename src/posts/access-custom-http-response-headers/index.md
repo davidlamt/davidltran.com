@@ -1,7 +1,8 @@
 ---
 title: "Accessing Custom HTTP Response Headers"
 date: "2018-04-23"
-tags: ["development"]
+categories: ["Development"]
+tags: ["http"]
 ---
 
 I am working on a user story that makes trips to an API endpoint that returns custom headers. Like how vague that was? Best to throw caution to the wind in the hopes of avoiding any legal issues. 🙂

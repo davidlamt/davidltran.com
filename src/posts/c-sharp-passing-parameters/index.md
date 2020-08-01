@@ -1,7 +1,8 @@
 ---
 title: "Is C# Pass by Value or Pass by Reference?"
 date: "2017-07-16"
-tags: ["development"]
+categories: ["Development"]
+tags: ["c#"]
 ---
 
 Recently, I was tasked with helping to remove sensitive data in C#.

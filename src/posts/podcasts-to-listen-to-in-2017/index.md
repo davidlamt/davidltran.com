@@ -1,7 +1,8 @@
 ---
 title: "Podcasts to Listen to in 2017: A Software Developer’s Perspective"
 date: "2017-04-30"
-tags: ["thoughts"]
+categories: ["Personal"]
+tags: ["podcasts"]
 ---
 
 What does a software developer do in their free time besides thinking about food?

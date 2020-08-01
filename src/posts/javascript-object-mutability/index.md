@@ -1,7 +1,8 @@
 ---
 title: "JavaScript Object Mutability"
 date: "2017-10-01"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 In a [previous post](/blog/var-vs-let-vs-const), I discussed how declaring variables (and functions) with `const` helps prevent state changes.

@@ -1,7 +1,8 @@
 ---
 title: "Using Vim for a Week"
 date: "2017-06-04"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts", "vim"]
 ---
 
 I have been listening to [development podcasts](/blog/podcasts-to-listen-to-in-2017) development podcasts for a while now. Once in a while, I hear either a host or a guest mention how great Vim is and how everybody should at least try it.

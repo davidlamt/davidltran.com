@@ -1,7 +1,8 @@
 ---
 title: "Configuring ESLint and Prettier in VSCode"
 date: "2018-03-30"
-tags: ["development"]
+categories: ["Development"]
+tags: ["development environment", "eslint", "prettier", "vscode"]
 ---
 
 Recently, I was trying to improve my programming workflow but found the process of setting up ESLint and Prettier for VSCode confusing. I wanted my source code to both be linted and formatted on save.

@@ -1,7 +1,8 @@
 ---
 title: "Logging Function Entry and Exit in C"
 date: "2018-03-31"
-tags: ["development"]
+categories: ["Development"]
+tags: ["c"]
 ---
 
 Recently, I had to figure out a way to log when a function was entered and exited in C. I thought about doing it manually but ran into some huge roadblocks.

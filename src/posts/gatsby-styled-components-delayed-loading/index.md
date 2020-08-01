@@ -1,7 +1,8 @@
 ---
 title: "Styled Components Delayed Loading Issue in Gatsby"
 date: "2018-03-29"
-tags: ["development"]
+categories: ["Development"]
+tags: ["gatsby", "styled components"]
 ---
 
 I was recently introduced to [Styled Components](https://www.styled-components.com/) when I took Scott Tolinski's [course](https://www.leveluptutorials.com/tutorials/pro-gatsby) in preparation for [updating my site](/blog/migrating-to-gatsby-and-netlify).

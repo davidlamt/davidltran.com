@@ -1,7 +1,8 @@
 ---
 title: "Vancouver, British Columbia 2018"
 date: "2018-07-09"
-tags: ["offline"]
+categories: ["Personal"]
+tags: ["travels"]
 ---
 
 I recently went on a four day trip to [Vancouver, BC](https://en.wikipedia.org/wiki/Vancouver) with my girlfriend. Well, we spent most of the fourth day at the airport and traveling home so it was actually three days of activities.

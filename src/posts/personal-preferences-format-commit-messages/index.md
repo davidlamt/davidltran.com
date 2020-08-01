@@ -1,7 +1,8 @@
 ---
 title: "Personal Preferences for Formatting Commit Messages"
 date: "2018-04-29"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["git", "thoughts"]
 ---
 
 Ever get so angry that you want to punch your computer screen when you see an empty commit message?
@@ -10,7 +11,7 @@ No, just me?
 
 Some wise words by someone somewhere:
 
->> Code as if the next developer who has to maintain your code is a psychopath and knows where you live.
+> Code as if the next developer who has to maintain your code is a psychopath and knows where you live.
 
 ## Formatting a Commit Message
 

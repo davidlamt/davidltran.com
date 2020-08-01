@@ -1,7 +1,8 @@
 ---
 title: "Git Basics: A Short Introduction"
 date: "2017-06-11"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 In a [previous post](/blog/what-is-version-control), I discussed the differences between centralized and distributed version control systems. I also made a statement that I prefer distributed version control systems.

@@ -1,7 +1,8 @@
 ---
 title: "Do Not Use Magic Numbers and Strings"
 date: "2017-05-07"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts"]
 ---
 
 I recently had the opportunity to make improvements to code I wrote about eight months ago.

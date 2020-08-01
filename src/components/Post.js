@@ -61,7 +61,7 @@ export default class Post extends Component {
         fileAbsolutePath: 'post/index.md',
         frontmatter: {
           date: '1970-01-01',
-          tags: ['default'],
+          tags: ['tag'],
           title: 'Default Title',
         },
         html: '<p>Default HTML</p>',

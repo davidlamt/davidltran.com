@@ -1,7 +1,8 @@
 ---
 title: "Generic Memoization in JavaScript"
 date: "2018-02-04"
-tags: ["development"]
+categories: ["development"]
+tags: ["javascript"]
 ---
 
 I just discovered something amazing called memoization through [Stephen Grider's course](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/).

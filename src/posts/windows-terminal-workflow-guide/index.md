@@ -1,7 +1,8 @@
 ---
 title: "How to Set up Bash on Ubuntu on Windows, Zsh, and Hyper Terminal"
 date: "2017-05-14"
-tags: ["development"]
+categories: ["Development"]
+tags: ["development environment"]
 ---
 
 Have you ever wished that your Windows terminal emulator could look more aesthetically pleasing or be as feature rich as the Linux terminal?

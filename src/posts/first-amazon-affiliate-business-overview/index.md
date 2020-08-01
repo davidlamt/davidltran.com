@@ -1,7 +1,8 @@
 ---
 title: "First Amazon Affiliate Business Overview"
 date: "2017-09-03"
-tags: ["thoughts", "business"]
+categories: ["Personal"]
+tags: ["business"]
 ---
 
 Remember me mentioning online businesses a while back?

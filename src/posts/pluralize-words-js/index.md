@@ -1,7 +1,8 @@
 ---
 title: "Pluralizing Words in JavaScript"
 date: "2018-04-30"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Add a "s" to the end of the word.

@@ -1,7 +1,8 @@
 ---
 title: "Migrating from WordPress to Hugo"
 date: "2017-08-20"
-tags: ["thoughts"]
+categories: ["Development"]
+tags: ["hugo", "thoughts"]
 ---
 
 *Note*: I have migrated this blog to [Gatsby](/blog/migrating-to-gatsby-and-netlify)!

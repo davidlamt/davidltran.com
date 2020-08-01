@@ -1,7 +1,8 @@
 ---
 title: "KCON 2017"
 date: "2017-09-17"
-tags: ["offline"]
+categories: ["Personal"]
+tags: ["experiences"]
 ---
 
 ![KCON 2017 Photo 1](/kcon-2017-1.jpg)

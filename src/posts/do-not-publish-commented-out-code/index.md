@@ -1,7 +1,8 @@
 ---
 title: "Do Not Publish Commented Out Code"
 date: "2017-11-12"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts"]
 ---
 
 Have you ever looked at the source code for a project and saw a bunch of commented out code?

@@ -1,6 +1,7 @@
 ---
 title: "Acts of Kindness"
 date: "2017-05-21"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 
