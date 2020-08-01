@@ -1,7 +1,8 @@
 ---
 title: "Checking If a Primitive Array is Unique in JavaScript"
 date: "2018-10-21"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Looking for a way to verify that your primitive array does not contain duplicates without reaching for a third-party package?

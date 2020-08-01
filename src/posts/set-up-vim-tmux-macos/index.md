@@ -1,7 +1,8 @@
 ---
 title: "Setting up Vim and tmux on macOS"
 date: "2018-08-11"
-tags: ["development"]
+categories: ["Development"]
+tags: ["development environment", "macos", "tmux", "vim"]
 ---
 
 I am trying to improve my Vim and tmux knowledge by using them full-time on personal projects. For professional work, [VSCode](https://code.visualstudio.com/) is still my main editor since I am more efficient in that environment (for now). However, I still love [Vim key bindings](/blog/vim-progress-update)!

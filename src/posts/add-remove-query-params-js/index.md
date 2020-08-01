@@ -1,7 +1,8 @@
 ---
 title: "Adding and Removing Query Parameters in JavaScript"
 date: "2018-09-04"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 What is the best approach to adjusting parameters in a query string in a safe and reliable manner?

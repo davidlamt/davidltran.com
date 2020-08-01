@@ -1,7 +1,8 @@
 ---
 title: "Leaving Less Comments"
 date: "2018-09-10"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts"]
 ---
 
 **We should strive to leave less comments in source code**.

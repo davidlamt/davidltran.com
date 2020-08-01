@@ -1,7 +1,8 @@
 ---
 title: "Requiring One of Two Properties to Exist in TypeScript"
 date: "2020-07-12"
-tags: ["development"]
+categories: ["Development"]
+tags: ["typescript"]
 ---
 
 How do we represent a function or a React component that requires one of two properties, but not both, to exist in TypeScript?

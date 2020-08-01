@@ -1,7 +1,8 @@
 ---
 title: "Estimations"
 date: "2018-07-21"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts"]
 ---
 
 I am a 10x developer. x is my original estimation.

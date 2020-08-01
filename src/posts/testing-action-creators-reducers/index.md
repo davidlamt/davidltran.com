@@ -1,7 +1,8 @@
 ---
 title: 'Use Action Creators When Testing Reducers'
 date: '2018-08-05'
-tags: ['development']
+categories: ['Development']
+tags: ['redux', 'testing']
 ---
 
 What does testing an action creator usually look like?

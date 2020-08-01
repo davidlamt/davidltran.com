@@ -1,7 +1,8 @@
 ---
 title: "Preventing IE11 from Caching AJAX Requests"
 date: "2018-10-15"
-tags: ["development"]
+categories: ["Development"]
+tags: ["http"]
 ---
 
 It seems that some versions of IE11 caches all AJAX requests. While this could be useful, in my opinion, this "feature" seems more harmful than advantageous.

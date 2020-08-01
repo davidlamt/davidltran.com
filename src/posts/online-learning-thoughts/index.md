@@ -1,6 +1,7 @@
 ---
 title: "Thoughts on Online Learning"
 date: "2018-08-05"
+categories: ["Development"]
 tags: ["thoughts"]
 ---
 

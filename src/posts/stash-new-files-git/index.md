@@ -1,7 +1,8 @@
 ---
 title: "Stashing New Files in Git"
 date: "2018-07-15"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 Let's say you are working on a new feature but need to switch branches to apply a fix. Your current branch has both tracked and untracked (new) files and you want to save both types for when you return.

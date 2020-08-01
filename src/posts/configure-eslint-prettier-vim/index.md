@@ -1,7 +1,8 @@
 ---
 title: "Configuring ESLint and Prettier for Vim"
 date: "2018-08-19"
-tags: ["development"]
+categories: ["Development"]
+tags: ["development environment", "eslint", "prettier", "vim"]
 ---
 
 I previously wrote about [setting up ESLint and Prettier for VSCode](/blog/configure-eslint-prettier-vscode). At the moment, I am trying to use [Vim more often](/blog/set-up-vim-tmux-macos) so I thought it would be a good idea to document the process for getting set up with this editor as well!

@@ -1,7 +1,8 @@
 ---
 title: "Setting up iTerm2, zsh, and Oh My Zsh"
 date: "2018-08-10"
-tags: ["development"]
+categories: ["Development"]
+tags: ["development environment"]
 ---
 
 I recently joined the cool kids club by purchasing a Macbook Pro. I have primarly used Windows but was exposed to the Apple ecosystem for the better part of a year in my professional careers.  

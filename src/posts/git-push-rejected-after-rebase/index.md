@@ -1,7 +1,8 @@
 ---
 title: "Git Push Rejected After Rebase"
 date: "2018-07-29"
-tags: ["development"]
+categories: ["Development"]
+tags: ["git"]
 ---
 
 Have you ever rebased your branch on top of another and then try to push the updated branch?

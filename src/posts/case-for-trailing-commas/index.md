@@ -1,7 +1,8 @@
 ---
 title: "A Case for Trailing Commas"
 date: "2020-05-09"
-tags: ["development", "thoughts"]
+categories: ["Development"]
+tags: ["thoughts"]
 ---
 
 Have you ever seen code similar the following and wondered what the point of the comma on the last propery was for?

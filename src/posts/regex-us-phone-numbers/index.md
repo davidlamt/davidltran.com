@@ -1,7 +1,8 @@
 ---
 title: "Regular Expression for United States Phone Numbers"
 date: "2018-07-20"
-tags: ["development"]
+categories: ["Development"]
+tags: ["regex"]
 ---
 
 I used the following regular expression to test for US phone numbers.

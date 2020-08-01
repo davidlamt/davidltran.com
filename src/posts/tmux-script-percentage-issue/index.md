@@ -1,7 +1,8 @@
 ---
 title: "tmux Script Percentage Issue"
 date: "2018-08-17"
-tags: ["development"]
+categories: ["Development"]
+tags: ["tmux"]
 ---
 
 I created a [workspace script](https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/tmux-workspace.sh) for _this_ project that starts a [tmux](/blog/set-up-vim-tmux-macos) session with a side pane set to 25% of the terminal's width.

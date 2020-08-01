@@ -1,6 +1,7 @@
 ---
 title: "2018: Year in Review"
 date: "2019-01-17"
+categories: ["Personal"]
 tags: ["thoughts"]
 ---
 

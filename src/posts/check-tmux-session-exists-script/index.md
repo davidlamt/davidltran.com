@@ -1,7 +1,8 @@
 ---
 title: "Checking If tmux Session Exists in Script"
 date: "2018-08-18"
-tags: ["development"]
+categories: ["Development"]
+tags: ["tmux"]
 ---
 
 I am trying to adopt creating a tmux-workspace.sh script for my projects to help get my development environment set up quickly and easily.

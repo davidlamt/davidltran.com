@@ -1,7 +1,8 @@
 ---
 title: "Transforming Object Values in JavaScript"
 date: "2018-08-26"
-tags: ["development"]
+categories: ["Development"]
+tags: ["javascript"]
 ---
 
 Recently, I ran into a situation where we needed to stringify an object's values to pass into webpack's [DefinePlugin()](https://webpack.js.org/plugins/define-plugin/).

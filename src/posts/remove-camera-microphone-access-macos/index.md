@@ -1,7 +1,8 @@
 ---
 title: "Removing Camera and Microphone Access on macOS"
 date: "2020-07-05"
-tags: ["development"]
+categories: ["Development"]
+tags: ["macos"]
 ---
 
 We've recently been working on integrating video calling into our web products at TigerConnect in response to COVID-19.

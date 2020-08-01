@@ -1,7 +1,8 @@
 ---
 title: "KCON 2018"
 date: "2018-08-13"
-tags: ["offline"]
+categories: ["Personal"]
+tags: ["experiences"]
 ---
 
 I had the opportunity to attend KCON [again](/blog/kcon-2017) this year!
