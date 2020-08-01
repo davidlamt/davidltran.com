@@ -57,12 +57,12 @@ const Uses = () => (
         . I like IKEA products because they are usually affordable and of decent
         quality.
       </li>
-      <li>The real MVP is my 2018 13" Macbook Pro.</li>
+      <li>The real MVP is my 2018 13&#34; Macbook Pro.</li>
       <li>
         I usually keep my laptop closed with a{' '}
         <a href="https://amzn.to/2R3R6Ap">vertical stand</a> and use a single{' '}
-        <a href="https://amzn.to/2q3TaNm">Samsung 28" 4k Monitor</a> on top of a{' '}
-        <a href="https://amzn.to/2D0mqgo">monitor stand</a>.
+        <a href="https://amzn.to/2q3TaNm">Samsung 28&#34; 4k Monitor</a> on top
+        of a <a href="https://amzn.to/2D0mqgo">monitor stand</a>.
       </li>
       <li>
         My laptop connects to everything using a single cable with the{' '}
