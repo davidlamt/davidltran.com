@@ -6,15 +6,17 @@ const FooterContainer = styled.footer`
   color: #aaa;
   font-size: 80%;
   margin: 1.45rem 0;
+  position: relative;
 `;
 
 const EmailInstruction = styled.div`
-  margin-bottom: 0.5rem;
-  min-height: 22px;
-  text-align: right;
+  margin-top: -1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   @media (max-width: 511px) {
-    text-align: left;
+    left: 0;
   }
 `;
 
