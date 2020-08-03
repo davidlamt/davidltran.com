@@ -19,16 +19,23 @@ const Uses = () => (
     <h2>Development</h2>
     <ul>
       <li>
-        <a href="https://www.vim.org/">Vim</a> is currently my main editor.
-        Before this, I used <a href="https://code.visualstudio.com/">VSCode</a>{' '}
-        and I still think it is a great editor.
+        Nowadays, I mostly use{' '}
+        <a href="https://code.visualstudio.com/">VSCode</a> with the{' '}
+        <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">
+          Vim extension
+        </a>
+        . I find the out-of-the-box experience fantastic and I still get to use
+        my beloved Vim key bindings.
       </li>
       <li>
-        I use <a href="https://iterm2.com/">iTerm2</a> along with Vim and{' '}
-        <a href="https://github.com/tmux/tmux/wiki">tmux</a>. I am currently
-        trying out the{' '}
-        <a href="https://github.com/tonsky/FiraCode">Fira Code</a> font with
-        ligatures.
+        When necessary, I use <a href="https://iterm2.com/">iTerm2</a> along
+        with <a href="https://www.vim.org/">Vim</a> and{' '}
+        <a href="https://github.com/tmux/tmux/wiki">tmux</a>. Although, I am
+        gravitating towards the integrated VSCode terminal + tmux when possible.
+      </li>
+      <li>
+        I use the <a href="https://github.com/tonsky/FiraCode">Fira Code</a>{' '}
+        font with ligatures.
       </li>
       <li>
         <a href="https://github.com/davidlamt/dotfiles">
@@ -57,7 +64,7 @@ const Uses = () => (
         . I like IKEA products because they are usually affordable and of decent
         quality.
       </li>
-      <li>The real MVP is my 2018 13&#34; Macbook Pro.</li>
+      <li>The real MVP is my MacBook Pro.</li>
       <li>
         I usually keep my laptop closed with a{' '}
         <a href="https://amzn.to/2R3R6Ap">vertical stand</a> and use a single{' '}
@@ -83,12 +90,9 @@ const Uses = () => (
 
     <h2>Misc.</h2>
     <ul>
-      <li>My phone is the Google Pixel 2 XL.</li>
       <li>
         I mostly listen to podcasts and audiobooks on the{' '}
-        <a href="https://amzn.to/2q3FWjN">
-          Bose SoundSport Wireless Headphones.
-        </a>
+        <a href="https://amzn.to/2BSg2cl">Jaybird Vista Wireless Headphones.</a>
       </li>
       <li>
         <a href="https://amzn.to/2q3AjSB">Anova Precision Cooker</a>: A friend
