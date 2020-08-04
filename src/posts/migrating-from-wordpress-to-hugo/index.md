@@ -5,6 +5,8 @@ categories: ["Development"]
 tags: ["hugo", "thoughts"]
 ---
 
+*Updated on March 27, 2018*
+
 *Note*: I have migrated this blog to [Gatsby](/blog/migrating-to-gatsby-and-netlify)!
 
 Do you notice anything new?
