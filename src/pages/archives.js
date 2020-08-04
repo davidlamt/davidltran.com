@@ -5,7 +5,7 @@ import Posts from '../components/Posts';
 
 const Archives = () => (
   <Layout>
-    <Posts />
+    <Posts searchable />
   </Layout>
 );
 

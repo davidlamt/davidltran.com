@@ -10,7 +10,22 @@ const PostList = styled.ul`
   list-style: none;
 `;
 
-const Posts = ({ numberOfPostsToShow }) => {
+const SearchInput = styled.input`
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  max-width: 500px;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+`;
+
+const Posts = ({ numberOfPostsToShow, searchable }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -36,26 +51,34 @@ const Posts = ({ numberOfPostsToShow }) => {
       `}
       render={data => {
         const posts = data.allMarkdownRemark.edges;
+        let searchFragment;
+
+        if (searchable) {
+          searchFragment = <SearchInput placeholder="Search posts" />;
+        }
 
         return (
-          <PostList>
-            {posts.map(({ node: post }, index) => {
-              if (!numberOfPostsToShow || index < numberOfPostsToShow) {
-                return (
-                  <li key={post.id}>
-                    <PostListing
-                      slug={post.fields.slug}
-                      title={post.frontmatter.title}
-                      date={post.frontmatter.date}
-                      tags={post.frontmatter.tags}
-                    />
-                  </li>
-                );
-              }
+          <React.Fragment>
+            {searchFragment}
+            <PostList>
+              {posts.map(({ node: post }, index) => {
+                if (!numberOfPostsToShow || index < numberOfPostsToShow) {
+                  return (
+                    <li key={post.id}>
+                      <PostListing
+                        slug={post.fields.slug}
+                        title={post.frontmatter.title}
+                        date={post.frontmatter.date}
+                        tags={post.frontmatter.tags}
+                      />
+                    </li>
+                  );
+                }
 
-              return null;
-            })}
-          </PostList>
+                return null;
+              })}
+            </PostList>
+          </React.Fragment>
         );
       }}
     />
@@ -64,10 +87,12 @@ const Posts = ({ numberOfPostsToShow }) => {
 
 Posts.propTypes = {
   numberOfPostsToShow: PropTypes.number,
+  searchable: PropTypes.bool,
 };
 
 Posts.defaultProps = {
   numberOfPostsToShow: null,
+  searchable: false,
 };
 
 export default Posts;
