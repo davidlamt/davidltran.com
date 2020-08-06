@@ -10,19 +10,31 @@ const PostList = styled.ul`
   list-style: none;
 `;
 
+const SearchContainer = styled.div`
+  align-items: center;
+  display: flex;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  position: relative;
+`;
+
 const SearchInput = styled.input`
   border-radius: 5px;
   border: 1px solid #d3d3d3;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  max-width: 500px;
   outline: none;
-  padding: 5px 10px;
+  padding: 5px 50px 5px 10px;
   width: 100%;
 
   &:focus {
     box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
   }
+`;
+
+const PostCount = styled.span`
+  color: #d3d3d3;
+  position: absolute;
+  right: 10px;
 `;
 
 const Posts = ({ numberOfPostsToShow, searchable }) => {
@@ -71,11 +83,14 @@ const Posts = ({ numberOfPostsToShow, searchable }) => {
   return (
     <React.Fragment>
       {searchable && (
-        <SearchInput
-          onChange={handleInputChange}
-          placeholder="Search posts"
-          value={searchInput}
-        />
+        <SearchContainer>
+          <SearchInput
+            onChange={handleInputChange}
+            placeholder="Search posts"
+            value={searchInput}
+          />
+          <PostCount>{postsToDisplay.length}</PostCount>
+        </SearchContainer>
       )}
       <PostList>
         {postsToDisplay.map(({ node: post }) => {
