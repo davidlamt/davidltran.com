@@ -1,5 +1,5 @@
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import React, { useState } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -26,62 +26,72 @@ const SearchInput = styled.input`
 `;
 
 const Posts = ({ numberOfPostsToShow, searchable }) => {
-  return (
-    <StaticQuery
-      query={graphql`
-        query PostsQuery {
-          allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-          ) {
-            edges {
-              node {
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  date(formatString: "MMMM DD, YYYY")
-                  tags
-                }
+  const data = useStaticQuery(
+    graphql`
+      query PostsQuery {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                tags
               }
             }
           }
         }
-      `}
-      render={data => {
-        const posts = data.allMarkdownRemark.edges;
-        let searchFragment;
+      }
+    `
+  );
+  const posts = data.allMarkdownRemark.edges;
+  const [searchInput, setSearchInput] = useState('');
+  const [filteredPosts, setFilteredPosts] = useState(posts);
+  const postsToDisplay = filteredPosts.slice(0, numberOfPostsToShow);
 
-        if (searchable) {
-          searchFragment = <SearchInput placeholder="Search posts" />;
-        }
+  const handleInputChange = event => {
+    const searchInput = event.target.value.toLowerCase();
 
-        return (
-          <React.Fragment>
-            {searchFragment}
-            <PostList>
-              {posts.map(({ node: post }, index) => {
-                if (!numberOfPostsToShow || index < numberOfPostsToShow) {
-                  return (
-                    <li key={post.id}>
-                      <PostListing
-                        slug={post.fields.slug}
-                        title={post.frontmatter.title}
-                        date={post.frontmatter.date}
-                        tags={post.frontmatter.tags}
-                      />
-                    </li>
-                  );
-                }
+    const validPosts = posts.filter(({ node: post }) => {
+      const { tags, title } = post.frontmatter;
 
-                return null;
-              })}
-            </PostList>
-          </React.Fragment>
-        );
-      }}
-    />
+      return (
+        title.toLowerCase().includes(searchInput) ||
+        tags.join(' ').includes(searchInput)
+      );
+    });
+
+    setSearchInput(searchInput);
+    setFilteredPosts(validPosts);
+  };
+
+  return (
+    <React.Fragment>
+      {searchable && (
+        <SearchInput
+          onChange={handleInputChange}
+          placeholder="Search posts"
+          value={searchInput}
+        />
+      )}
+      <PostList>
+        {postsToDisplay.map(({ node: post }) => {
+          return (
+            <li key={post.id}>
+              <PostListing
+                slug={post.fields.slug}
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                tags={post.frontmatter.tags}
+              />
+            </li>
+          );
+        })}
+      </PostList>
+    </React.Fragment>
   );
 };
 
@@ -91,7 +101,7 @@ Posts.propTypes = {
 };
 
 Posts.defaultProps = {
-  numberOfPostsToShow: null,
+  numberOfPostsToShow: Infinity,
   searchable: false,
 };
 
