@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Layout from '../../components/Layout';
-import { Project } from '../../components';
+import Layout from '../components/Layout';
+import { Project } from '../components';
 
-import { projectsData } from '.';
+import projects from '../data/projects';
 
 const Projects = () => (
   <Layout>
@@ -12,7 +12,7 @@ const Projects = () => (
       For more projects, check out my{' '}
       <a href="https://github.com/davidlamt">GitHub</a>.
     </p>
-    {projectsData.map(project => (
+    {projects.map(project => (
       <Project key={project.title} project={project} />
     ))}
   </Layout>

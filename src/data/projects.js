@@ -1,4 +1,4 @@
-const projectsData = [
+const projects = [
   {
     title: 'The Tail End Visualizer',
     description: 'A visualization tool for how much time you have left.',
@@ -54,4 +54,4 @@ const projectsData = [
   },
 ];
 
-export default projectsData;
+export default projects;
