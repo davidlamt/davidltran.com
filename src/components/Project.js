@@ -8,10 +8,11 @@ const ProjectContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 `;
 
 const Image = styled.img`
-  width: 500px;
+  margin-bottom: 0.8rem;
 `;
 
 const InfoContainer = styled.div`
@@ -22,7 +23,7 @@ const ProjectTitle = styled.p`
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 1rem;
 `;
 
 const ProjectDescription = styled.p`
