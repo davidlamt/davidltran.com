@@ -63,7 +63,7 @@ const Header = () => (
           <Link to="/archives">Writing</Link>
         </li>
         <li>
-          <a href="https://github.com/davidlamt">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
       </ul>
     </MainNavigation>
