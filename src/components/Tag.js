@@ -15,6 +15,7 @@ const tagBackgroundColor = {
   c: '#a8bbcc',
   eslint: '#3f31bf',
   experiences: '#02837e',
+  express: '#444444',
   gatsby: '#663399',
   git: '#f44d27',
   http: '#005c99',
@@ -22,7 +23,9 @@ const tagBackgroundColor = {
   java: '#4c84a1',
   javascript: '#f0db4f',
   macos: '#033a7d',
+  mongodb: '#13aa52',
   netlify: '#00aea0',
+  node: '#68a168',
   podcasts: '#d4ad36',
   prettier: '#f8bc45',
   react: '#61dafb',
@@ -36,6 +39,7 @@ const tagBackgroundColor = {
   typescript: '#0074c1',
   vim: '#007f00',
   vscode: '#00a6ec',
+
   // Next: #5a4296
 };
 
@@ -49,6 +53,7 @@ const tagForegroundColor = {
   c: '#333',
   eslint: '#fff',
   experiences: '#fff',
+  express: '#fff',
   gatsby: '#fff',
   git: '#fff',
   http: '#fff',
@@ -56,7 +61,9 @@ const tagForegroundColor = {
   java: '#fff',
   javascript: '#333',
   macos: '#fff',
+  mongodb: '#fff',
   netlify: '#fff',
+  node: '#fff',
   podcasts: '#333',
   prettier: '#333',
   react: '#333',
