@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'The Tail End Visualizer',
     description: 'A visualization tool for how much time you have left.',
-    image: 'tail-end-visualizer.png',
+    image: './tail-end-visualizer.png',
     alt: 'Screenshot of The The Tail End Visualizer application.',
     tags: ['react', 'typescript'],
     links: [
@@ -20,7 +20,7 @@ const projects = [
     title: 'The True Cost',
     description:
       'Tool for you to lament the true cost of common monthly expenses.',
-    image: 'the-true-cost.png',
+    image: './the-true-cost.png',
     alt: 'Screenshot of The True Cost application.',
     tags: ['react', 'typescript'],
     links: [
@@ -38,7 +38,7 @@ const projects = [
     title: 'AntFinder',
     description:
       'An organized marketplace for UCI students to advertise and purchase various goods.',
-    image: 'antfinder.png',
+    image: './antfinder.png',
     alt: 'Screenshot of AntFinder application.',
     tags: ['express', 'mongodb', 'node', 'react', 'redux'],
     links: [
