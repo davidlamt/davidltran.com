@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
+import { Tag } from './';
+
 const ExperienceContainer = styled.div`
   border-left: 4px solid #d9dee7;
   padding: 0 2rem 2rem;
@@ -61,6 +63,7 @@ const Experience = ({
   description,
   endDate,
   startDate,
+  tags,
   title,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -85,6 +88,9 @@ const Experience = ({
         </h2>
         <h3>{title}</h3>
         <p>{description}</p>
+        {tags.map(tag => (
+          <Tag tagName={tag} key={tag} />
+        ))}
       </CompanyContainer>
     </ExperienceContainer>
   );
