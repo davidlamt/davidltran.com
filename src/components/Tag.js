@@ -10,6 +10,7 @@ const tagBackgroundColor = {
   'development environment': '#89cce6',
   'react native': '#61dafb',
   'styled components': '#ffa1e4',
+  angular: '#dd1b16',
   bits: '#fff3e5',
   business: '#03a955',
   c: '#a8bbcc',
@@ -22,7 +23,9 @@ const tagBackgroundColor = {
   hugo: '#ff4088',
   java: '#4c84a1',
   javascript: '#f0db4f',
+  jquery: '#006aaa',
   macos: '#033a7d',
+  mobx: '#df5d17',
   mongodb: '#13aa52',
   netlify: '#00aea0',
   node: '#68a168',
@@ -37,10 +40,12 @@ const tagBackgroundColor = {
   tmux: '#11ba3a',
   travels: '#fda3bd',
   typescript: '#0074c1',
+  uwp: '#b893c6',
   vim: '#007f00',
   vscode: '#00a6ec',
+  wpf: '#5a4296',
 
-  // Next: #5a4296
+  // Next: #b1aed9
 };
 
 const tagForegroundColor = {
@@ -48,6 +53,7 @@ const tagForegroundColor = {
   'development environment': '#333',
   'react native': '#333',
   'styled components': '#333',
+  angular: '#fff',
   bits: '#333',
   business: '#fff',
   c: '#333',
@@ -60,7 +66,9 @@ const tagForegroundColor = {
   hugo: '#fff',
   java: '#fff',
   javascript: '#333',
+  jquery: '#fff',
   macos: '#fff',
+  mobx: '#fff',
   mongodb: '#fff',
   netlify: '#fff',
   node: '#fff',
@@ -75,8 +83,10 @@ const tagForegroundColor = {
   tmux: '#fff',
   travels: '#333',
   typescript: '#fff',
+  uwp: '#333',
   vim: '#fff',
   vscode: '#fff',
+  wpf: '#fff',
 };
 
 const TagLabel = styled.span`
