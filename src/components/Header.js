@@ -57,13 +57,13 @@ const Header = () => (
     <MainNavigation>
       <ul>
         <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
           <Link to="/archives">Writing</Link>
         </li>
         <li>
           <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/experience">Experience</Link>
         </li>
       </ul>
     </MainNavigation>
