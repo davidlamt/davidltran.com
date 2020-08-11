@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
@@ -51,19 +52,34 @@ const MainNavigation = styled.nav`
   }
 `;
 
+const ActiveLinkStyle = {
+  backgroundColor: '#f5f5f5',
+};
+
+const NavLink = ({ children, to }) => (
+  <Link to={to} activeStyle={ActiveLinkStyle} partiallyActive>
+    {children}
+  </Link>
+);
+
+NavLink.propTypes = {
+  children: PropTypes.node,
+  to: PropTypes.string.isRequired,
+};
+
 const Header = () => (
   <HeaderContainer>
     <HeaderName to="/">David Tran</HeaderName>
     <MainNavigation>
       <ul>
         <li>
-          <Link to="/archives">Writing</Link>
+          <NavLink to="/archives">Writing</NavLink>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
         <li>
-          <Link to="/experience">Experience</Link>
+          <NavLink to="/experience">Experience</NavLink>
         </li>
       </ul>
     </MainNavigation>
