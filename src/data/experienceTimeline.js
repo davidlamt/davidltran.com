@@ -1,9 +1,14 @@
+import IDTECHLogo from './images/id-tech.png';
+import OrbeeLogo from './images/orbee.png';
+import ThePortalLogo from './images/the-portal.png';
+import TigerConnectLogo from './images/tigerconnect.png';
+
 const experienceTimeline = [
   {
     startDate: 'Apr 2018',
     endDate: 'Present',
     companyName: 'TigerConnect',
-    companyLogo: './tigerconnect.png',
+    companyLogo: TigerConnectLogo,
     companyLogoAlt: 'TigerConnect Company Logo',
     companyUrl: 'https://tigerconnect.com/',
     title: 'Web Developer',
@@ -15,7 +20,7 @@ const experienceTimeline = [
     startDate: 'July 2016',
     endDate: 'Mar 2018',
     companyName: 'ID TECH',
-    companyLogo: './id-tech.png',
+    companyLogo: IDTECHLogo,
     companyLogoAlt: 'ID TECH Company Logo',
     companyUrl: 'https://idtechproducts.com/',
     title: 'Software Developer',
@@ -26,7 +31,7 @@ const experienceTimeline = [
     startDate: 'Feb 2016',
     endDate: 'June 2016',
     companyName: 'The Portal',
-    companyLogo: './the-portal.png',
+    companyLogo: ThePortalLogo,
     companyLogoAlt: 'The Portal Company Logo',
     companyUrl:
       'https://www.linkedin.com/company/the-portal-by-the-beall-family-foundation-and-k5-ventures/',
@@ -38,7 +43,7 @@ const experienceTimeline = [
     startDate: 'Sept 2015',
     endDate: 'Jan 2016',
     companyName: 'Orbee',
-    companyLogo: './orbee.png',
+    companyLogo: OrbeeLogo,
     companyLogoAlt: 'Orbee Company Logo',
     companyUrl: 'https://www.orbeeauto.com/',
     title: 'Front End Web Developer Intern',

@@ -41,7 +41,7 @@ const Project = ({ project }) => {
 
   return (
     <ProjectContainer>
-      <Image src={image} alt={alt}></Image>
+      <Image src={image} alt={alt} />
       <InfoContainer>
         {tags.map(tag => (
           <Tag key={tag} tagName={tag} />
