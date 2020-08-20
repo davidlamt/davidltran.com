@@ -1,13 +1,12 @@
-import AntFinderPreviewImage from './images/antfinder.png';
-import TailEndVisualizerPreviewImage from './images/tail-end-visualizer.png';
-import TheTrueCostPreviewImage from './images/the-true-cost.png';
+import AntFinderImage from './images/AntFinderImage';
+import TailEndVisualizerImage from './images/TailEndVisualizerImage';
+import TheTrueCostImage from './images/TheTrueCostImage';
 
 const projects = [
   {
     title: 'Tail End Visualizer',
     description: 'A visualization tool for how much time you have left.',
-    image: TailEndVisualizerPreviewImage,
-    alt: 'Screenshot of the Tail End Visualizer application',
+    image: TailEndVisualizerImage,
     tags: ['react', 'typescript'],
     links: [
       {
@@ -24,8 +23,7 @@ const projects = [
     title: 'The True Cost',
     description:
       'Tool for you to lament the true cost of common monthly expenses.',
-    image: TheTrueCostPreviewImage,
-    alt: 'Screenshot of The True Cost application',
+    image: TheTrueCostImage,
     tags: ['react', 'typescript'],
     links: [
       {
@@ -42,8 +40,7 @@ const projects = [
     title: 'AntFinder',
     description:
       'An organized marketplace for UCI students to advertise and purchase various goods.',
-    image: AntFinderPreviewImage,
-    alt: 'Screenshot of the AntFinder application',
+    image: AntFinderImage,
     tags: ['express', 'mongodb', 'node', 'react', 'redux'],
     links: [
       {

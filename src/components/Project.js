@@ -11,10 +11,6 @@ const ProjectContainer = styled.div`
   margin-bottom: 4rem;
 `;
 
-const Image = styled.img`
-  margin-bottom: 0.8rem;
-`;
-
 const InfoContainer = styled.div`
   text-align: center;
 `;
@@ -36,12 +32,19 @@ const Link = styled.a`
   }
 `;
 
+const ImageContainer = styled.div`
+  margin-bottom: 1.5rem;
+  width: 90%;
+`;
+
 const Project = ({ project }) => {
-  const { alt, description, image, links, tags, title } = project;
+  const { description, image: Image, links, tags, title } = project;
 
   return (
     <ProjectContainer>
-      <Image src={image} alt={alt} />
+      <ImageContainer>
+        <Image />
+      </ImageContainer>
       <InfoContainer>
         {tags.map(tag => (
           <Tag key={tag} tagName={tag} />
@@ -62,8 +65,7 @@ Project.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
+    image: PropTypes.func.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.arrayOf(
       PropTypes.shape({
