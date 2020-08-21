@@ -42,22 +42,14 @@ const CompanyContainer = styled.div`
   position: relative;
 `;
 
-const CompanyLogo = styled.img`
-  height: 50px;
+const CompanyLogoContainer = styled.a`
   position: absolute;
   right: 0;
   top: 0;
-  transition: transform 0.3s ease;
-  width: 50px;
-
-  &:hover {
-    transform: scale(1.3);
-  }
 `;
 
 const Experience = ({
-  companyLogo,
-  companyLogoAlt,
+  CompanyLogo,
   companyName,
   companyUrl,
   description,
@@ -80,9 +72,9 @@ const Experience = ({
         {startDate} - {endDate}
       </DatesContainer>
       <CompanyContainer>
-        <a href={companyUrl}>
-          <CompanyLogo src={companyLogo} alt={companyLogoAlt} />
-        </a>
+        <CompanyLogoContainer href={companyUrl}>
+          <CompanyLogo />
+        </CompanyLogoContainer>
         <h2>
           <a href={companyUrl}>{companyName}</a>
         </h2>
@@ -97,8 +89,7 @@ const Experience = ({
 };
 
 Experience.propTypes = {
-  companyLogo: PropTypes.string.isRequired,
-  companyLogoAlt: PropTypes.string.isRequired,
+  CompanyLogo: PropTypes.func.isRequired,
   companyName: PropTypes.string.isRequired,
   companyUrl: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

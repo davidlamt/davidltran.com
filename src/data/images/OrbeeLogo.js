@@ -1,13 +1,13 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
-import ProjectImage from './ProjectImage';
+import CompanyLogo from './CompanyLogo';
 
-const TheTrueCostImage = () => {
+const OrbeeLogo = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        file(relativePath: { eq: "images/the-true-cost.png" }) {
+        file(relativePath: { eq: "images/orbee.png" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -19,11 +19,11 @@ const TheTrueCostImage = () => {
   );
 
   return (
-    <ProjectImage
+    <CompanyLogo
       fluid={data.file.childImageSharp.fluid}
-      alt="Screenshot of The True Cost application"
+      alt="Orbee Company Logo"
     />
   );
 };
 
-export default TheTrueCostImage;
+export default OrbeeLogo;
