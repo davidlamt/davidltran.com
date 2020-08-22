@@ -22,9 +22,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           'gatsby-remark-autolink-headers',
           {
             resolve: 'gatsby-remark-images',
@@ -41,6 +42,13 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    // Duplicate plugin as a workaround for a known issue: https://github.com/gatsbyjs/gatsby/issues/19859
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['gatsby-remark-autolink-headers'],
       },
     },
     {

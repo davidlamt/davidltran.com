@@ -41,7 +41,7 @@ const Posts = ({ numberOfPostsToShow, searchable }) => {
   const data = useStaticQuery(
     graphql`
       query PostsQuery {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               id
@@ -59,7 +59,7 @@ const Posts = ({ numberOfPostsToShow, searchable }) => {
       }
     `
   );
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMdx.edges;
   const [searchInput, setSearchInput] = useState('');
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const postsToDisplay = filteredPosts.slice(0, numberOfPostsToShow);

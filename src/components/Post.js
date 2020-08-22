@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import Layout from './Layout';
 import { Tag } from './';
@@ -43,36 +44,36 @@ const PostMarkdown = styled.div`
 export default class Post extends Component {
   static propTypes = {
     data: PropTypes.shape({
-      markdownRemark: PropTypes.shape({
+      mdx: PropTypes.shape({
         fileAbsolutePath: PropTypes.string,
         frontmatter: PropTypes.shape({
           date: PropTypes.string,
           tags: PropTypes.arrayOf(PropTypes.string),
           title: PropTypes.string,
         }),
-        html: PropTypes.string,
+        body: PropTypes.string,
       }),
     }),
   };
 
   static defaultProps = {
     data: {
-      markdownRemark: {
+      mdx: {
         fileAbsolutePath: 'post/index.md',
         frontmatter: {
           date: '1970-01-01',
           tags: ['tag'],
           title: 'Default Title',
         },
-        html: '<p>Default HTML</p>',
+        body: '<p>Default HTML</p>',
       },
     },
   };
 
   render() {
     const { data } = this.props;
-    const { date, tags, title } = data.markdownRemark.frontmatter;
-    const fileRelativePath = data.markdownRemark.fileAbsolutePath
+    const { date, tags, title } = data.mdx.frontmatter;
+    const fileRelativePath = data.mdx.fileAbsolutePath
       .split('/')
       .slice(-2)
       .join('/');
@@ -90,12 +91,9 @@ export default class Post extends Component {
               ))}
             </div>
           </PostMeta>
-          <PostMarkdown
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{
-              __html: data.markdownRemark.html,
-            }}
-          />
+          <PostMarkdown>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </PostMarkdown>
           <em>
             Noticed a mistake in this post? Feel free to{' '}
             <a href={fileURL}>submit a pull request</a>!
@@ -108,14 +106,14 @@ export default class Post extends Component {
 
 export const query = graphql`
   query BlogPostQuery($slug: String) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       fileAbsolutePath
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         tags
       }
-      html
+      body
     }
   }
 `;
