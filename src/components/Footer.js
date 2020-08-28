@@ -56,7 +56,7 @@ const MainNavigation = styled.nav`
   }
 `;
 
-const EMAIL = 'davidlamt@gmail.com';
+const EMAIL = 'hello@davidltran.com';
 const COPIED_TEXT = `${EMAIL} copied to clipboard`;
 const COPIED_TIMEOUT = 3000;
 
