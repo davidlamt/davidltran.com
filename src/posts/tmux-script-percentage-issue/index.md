@@ -5,7 +5,7 @@ categories: ["Development"]
 tags: ["tmux"]
 ---
 
-I created a [workspace script](https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/tmux-workspace.sh) for _this_ project that starts a [tmux](/blog/set-up-vim-tmux-macos) session with a side pane set to 25% of the terminal's width.
+I created a [workspace script](https://github.com/davidlamt/davidltran.com/blob/master/tmux-workspace.sh) for _this_ project that starts a [tmux](/blog/set-up-vim-tmux-macos) session with a side pane set to 25% of the terminal's width.
 
 I like to use [iTerm2](/blog/set-up-iterm2-zsh-oh-my-zsh) in full-screen when working on software projects. However, the above script starts a tmux session whose side pane seems to be more like 33% of the terminal's width.
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-session="davidtranscend-com-gatsby-workspace"
+session="davidltran-com-workspace"
 
 # Check if the session exists, discarding output
 # We can check $? for the exit status (zero for success, non-zero for failure)

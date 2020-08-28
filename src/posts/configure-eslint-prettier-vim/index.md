@@ -86,7 +86,7 @@ You can customize the [Prettier options](https://prettier.io/docs/en/options.htm
 
 Do not fret if you do not know what to add at this point, you will learn common errors and warnings as you work more with JavaScript files using this setup. At that point, you can decide whether to modify the rules for certain errors and warnings.
 
-As an example, [here](https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/.eslintrc.json) is this site's ESLint configurations.
+As an example, [here](https://github.com/davidlamt/davidltran.com/blob/master/.eslintrc.js) is this site's ESLint configurations.
 
 ## Automate Fixing
 

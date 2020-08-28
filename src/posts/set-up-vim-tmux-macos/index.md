@@ -76,7 +76,7 @@ tmux also allows you to create scripts that will automate your workspace setup. 
 
 I want to adopt creating a `tmux-workspace.sh` script in my personal projects that will get my development environment up and running quickly and easily.
 
-Here's the [tmux setup script](https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/tmux-workspace.sh) for this site!
+Here's the [tmux setup script](https://github.com/davidlamt/davidltran.com/blob/master/tmux-workspace.sh) for this site!
 
 At the moment, I have a single pane dedicated to editing files with Vim, a pane for starting the Gatsby development server, and one more pane for issuing shell commands (Git commands, creating files, etc.).
 

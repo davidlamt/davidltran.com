@@ -117,7 +117,7 @@ You will want to add the following properties:
 }
 ```
 
-[Here](https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/.eslintrc.json) is a link to this site's ESLint configuration file as an example.
+[Here](https://github.com/davidlamt/davidltran.com/blob/master/.eslintrc.js) is a link to this site's ESLint configuration file as an example.
 
 ## Update VSCode Settings
 

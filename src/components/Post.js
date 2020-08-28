@@ -8,7 +8,7 @@ import Layout from './Layout';
 import { Tag } from './';
 
 const BASE_REPO_URL =
-  'https://github.com/davidlamt/davidtranscend-com-gatsby/blob/master/src/posts';
+  'https://github.com/davidlamt/davidltran.com/blob/master/src/posts';
 
 const PostContainer = styled.div`
   a.gatsby-resp-image-link {

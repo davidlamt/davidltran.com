@@ -75,7 +75,7 @@ Anyhow, Netlify now offers [form handling](https://www.netlify.com/docs/form-han
 
 Oh man, how I wish I would have discovered [Netlify](https://www.netlify.com/) sooner.
 
-This service made setting up automatic deployment and HTTPS so easy. I "configured" (clicked a button) Netlify to automatically rebuild and deploy my site when changes are pushed to the master branch on my site's [GitHub repository](https://github.com/davidlamt/davidtranscend-com-gatsby).
+This service made setting up automatic deployment and HTTPS so easy. I "configured" (clicked a button) Netlify to automatically rebuild and deploy my site when changes are pushed to the master branch on my site's [GitHub repository](https://github.com/davidlamt/davidltran.com).
 
 Long gone are my days of setting up webhooks to automatically pull in changes and rebuild my site.
 
