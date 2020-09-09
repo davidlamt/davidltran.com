@@ -1,5 +1,5 @@
 function getInitialColorMode() {
-  const persistedColorPreference = window.localStorage.getItem('color-mode');
+  const persistedColorPreference = window.localStorage.getItem('theme');
   const hasPersistedPreference = typeof persistedColorPreference === 'string';
 
   // If the user has explicitly chosen light or dark,
