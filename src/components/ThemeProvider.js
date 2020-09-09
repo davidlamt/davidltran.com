@@ -10,15 +10,21 @@ const ThemeProvider = ({ children }) => {
 
   function setTheme(newValue) {
     setRawTheme(newValue);
+    // TODO: Use constant for theme here and in getInitiaColorMode.js
     localStorage.setItem('theme', newValue);
   }
 
   useEffect(() => {
     const root = window.document.documentElement;
+    // TODO: Extract property + values to static structure and pull in here
     root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
     root.style.setProperty(
       '--color-background',
       theme === 'light' ? '#fff' : '#0e141b'
+    );
+    root.style.setProperty(
+      '--item-hover-color',
+      theme === 'light' ? '#f5f5f5' : '#333'
     );
   }, [theme]);
 
