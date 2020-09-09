@@ -7,7 +7,7 @@ import { Tag } from '../';
 
 const PostListingContainer = styled(Link)`
   border-radius: 5px;
-  color: #333;
+  color: var(--color-text);
   display: block;
   margin-left: -10px;
   padding: 10px;

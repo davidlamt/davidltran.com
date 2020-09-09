@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { useThemeProvider } from '../hooks';
+
 const HeaderContainer = styled.header`
   align-items: center;
   display: flex;
@@ -12,7 +14,7 @@ const HeaderContainer = styled.header`
 `;
 
 const HeaderName = styled(Link)`
-  color: #333;
+  color: var(--color-text);
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.1;
@@ -39,7 +41,7 @@ const MainNavigation = styled.nav`
 
       a {
         border-radius: 5px;
-        color: #333;
+        color: var(--color-text);
         padding: 10px;
         transition: background-color 0.2s linear;
 
@@ -67,23 +69,33 @@ NavLink.propTypes = {
   to: PropTypes.string.isRequired,
 };
 
-const Header = () => (
-  <HeaderContainer>
-    <HeaderName to="/">David Tran</HeaderName>
-    <MainNavigation>
-      <ul>
-        <li>
-          <NavLink to="/archives">Writing</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink to="/experience">Experience</NavLink>
-        </li>
-      </ul>
-    </MainNavigation>
-  </HeaderContainer>
-);
+const Header = () => {
+  const { theme, setTheme } = useThemeProvider();
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  return (
+    <HeaderContainer>
+      <HeaderName to="/">David Tran</HeaderName>
+      <MainNavigation>
+        <ul>
+          <li>
+            <NavLink to="/archives">Writing</NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/experience">Experience</NavLink>
+          </li>
+          <li>
+            <button onClick={toggleTheme}>Theme</button>
+          </li>
+        </ul>
+      </MainNavigation>
+    </HeaderContainer>
+  );
+};
 
 export default Header;

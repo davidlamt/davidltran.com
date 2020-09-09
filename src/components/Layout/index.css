@@ -4,6 +4,9 @@ html {
 }
 body {
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: all 0.2s ease;
 }
 article,
 aside,
@@ -202,7 +205,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: #333;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
