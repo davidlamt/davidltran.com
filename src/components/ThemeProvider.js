@@ -1,12 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import { getInitialTheme } from '../utils';
-
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setRawTheme] = useState(getInitialTheme);
+  const [theme, setRawTheme] = useState(undefined);
 
   function setTheme(newTheme) {
     setRawTheme(newTheme);
@@ -16,11 +14,19 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = window.document.documentElement;
+
+    const initialColorValue = root.style.getPropertyValue('--initial-theme');
+
+    setRawTheme(initialColorValue);
+  }, []);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
     // TODO: Extract property + values to static structure and pull in here
     root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
     root.style.setProperty(
       '--color-background',
-      theme === 'light' ? '#fff' : '#0e141b'
+      theme === 'light' ? '#fff' : '#2b2b2b'
     );
     root.style.setProperty(
       '--item-hover-color',
