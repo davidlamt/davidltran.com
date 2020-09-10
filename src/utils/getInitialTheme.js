@@ -1,4 +1,4 @@
-function getInitialColorMode() {
+function getInitialTheme() {
   const persistedColorPreference = window.localStorage.getItem('theme');
   const hasPersistedPreference = typeof persistedColorPreference === 'string';
 
@@ -20,4 +20,4 @@ function getInitialColorMode() {
   return 'light';
 }
 
-export default getInitialColorMode;
+export default getInitialTheme;

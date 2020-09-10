@@ -1,3 +1,3 @@
-import getInitialColorMode from './getInitialColorMode';
+import getInitialTheme from './getInitialTheme';
 
-export { getInitialColorMode };
+export { getInitialTheme };

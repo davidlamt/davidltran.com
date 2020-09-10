@@ -1,17 +1,17 @@
 import React, { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import { getInitialColorMode } from '../utils';
+import { getInitialTheme } from '../utils';
 
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setRawTheme] = useState(getInitialColorMode);
+  const [theme, setRawTheme] = useState(getInitialTheme);
 
-  function setTheme(newValue) {
-    setRawTheme(newValue);
+  function setTheme(newTheme) {
+    setRawTheme(newTheme);
     // TODO: Use constant for theme here and in getInitiaColorMode.js
-    localStorage.setItem('theme', newValue);
+    localStorage.setItem('theme', newTheme);
   }
 
   useEffect(() => {
