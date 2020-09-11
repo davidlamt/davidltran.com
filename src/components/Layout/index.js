@@ -21,6 +21,10 @@ const Content = styled.div`
   margin: 0 auto;
   width: 100%;
   flex: 1;
+
+  .anchor svg {
+    fill: var(--color-text);
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
