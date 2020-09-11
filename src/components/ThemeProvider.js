@@ -32,6 +32,10 @@ const ThemeProvider = ({ children }) => {
       '--item-hover-color',
       theme === 'light' ? '#f5f5f5' : '#333'
     );
+    root.style.setProperty(
+      '--footer-item-hover-color',
+      theme === 'light' ? '#333' : '#fff'
+    );
   }, [theme]);
 
   return (

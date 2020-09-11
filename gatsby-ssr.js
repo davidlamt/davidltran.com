@@ -43,6 +43,10 @@ const SetInitialTheme = () => {
     '--item-hover-color',
     theme === 'light' ? '#f5f5f5' : '#333'
   );
+  root.style.setProperty(
+    '--footer-item-hover-color',
+    theme === 'light' ? '#333' : '#fff'
+  );
 
   root.style.setProperty('--initial-theme', theme);
 })()
