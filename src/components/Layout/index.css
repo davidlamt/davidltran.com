@@ -40,7 +40,7 @@ template {
   display: none;
 }
 a {
-  color: #0984e3;
+  color: var(--link-color);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;

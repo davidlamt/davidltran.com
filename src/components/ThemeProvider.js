@@ -26,7 +26,11 @@ const ThemeProvider = ({ children }) => {
     root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
     root.style.setProperty(
       '--color-background',
-      theme === 'light' ? '#fff' : '#2b2b2b'
+      theme === 'light' ? '#fff' : '#1e1e1e'
+    );
+    root.style.setProperty(
+      '--link-color',
+      theme === 'light' ? '#0984e3' : '#3398e6'
     );
     root.style.setProperty(
       '--item-hover-color',
