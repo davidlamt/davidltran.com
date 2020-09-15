@@ -51,6 +51,18 @@ const SetInitialTheme = () => {
     '--footer-item-hover-color',
     theme === 'light' ? '#333' : '#fff'
   );
+  root.style.setProperty(
+    '--experience-date-background',
+    theme === 'light' ? '#f5f5f5' : '#333'
+  );
+  root.style.setProperty(
+    '--experience-line-color',
+    theme === 'light' ? '#d9dee7' : '#333'
+  );
+  root.style.setProperty(
+    '--experience-diamond-color',
+    theme === 'light' ? '#333' : '#9e9e9e'
+  );
 
   root.style.setProperty('--initial-theme', theme);
 })()

@@ -5,13 +5,13 @@ import styled, { css } from 'styled-components';
 import { Tag } from './';
 
 const ExperienceContainer = styled.div`
-  border-left: 4px solid #d9dee7;
+  border-left: 4px solid var(--experience-line-color);
   padding: 0 2rem 2rem;
   position: relative;
 `;
 
 const DiamondSpinner = styled.div`
-  background-color: #333;
+  background-color: var(--experience-diamond-color);
   height: 30px;
   left: 0;
   margin-left: -17px;
@@ -30,7 +30,7 @@ const DiamondSpinner = styled.div`
 `;
 
 const DatesContainer = styled.p`
-  background-color: #f5f5f5;
+  background-color: var(--experience-date-background);
   border-radius: 5px;
   display: inline-block;
   font-size: 0.75em;
