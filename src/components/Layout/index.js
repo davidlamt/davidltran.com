@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import { Footer, Header, ThemeProvider } from '../';
+import { Footer, Header } from '../';
 import './index.css';
-
-require('prismjs/themes/prism-okaidia.css');
 
 const HomeContainer = styled.div`
   display: flex;
@@ -28,24 +26,22 @@ const Content = styled.div`
 `;
 
 const TemplateWrapper = ({ children }) => (
-  <ThemeProvider>
-    <HomeContainer>
-      <Helmet
-        title="David Tran"
-        meta={[
-          { name: 'description', content: "David Tran's Personal Site" },
-          {
-            name: 'keywords',
-            content:
-              'Software Development, Personal Thoughts, Offline Adventures',
-          },
-        ]}
-      />
-      <Header />
-      <Content>{children}</Content>
-      <Footer />
-    </HomeContainer>
-  </ThemeProvider>
+  <HomeContainer>
+    <Helmet
+      title="David Tran"
+      meta={[
+        { name: 'description', content: "David Tran's Personal Site" },
+        {
+          name: 'keywords',
+          content:
+            'Software Development, Personal Thoughts, Offline Adventures',
+        },
+      ]}
+    />
+    <Header />
+    <Content>{children}</Content>
+    <Footer />
+  </HomeContainer>
 );
 
 TemplateWrapper.propTypes = {

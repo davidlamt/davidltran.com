@@ -4,9 +4,6 @@ html {
 }
 body {
   margin: 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  transition: all 0.2s ease;
 }
 article,
 aside,
@@ -40,7 +37,6 @@ template {
   display: none;
 }
 a {
-  color: var(--link-color);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;

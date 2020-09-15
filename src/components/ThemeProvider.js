@@ -21,6 +21,8 @@ const ThemeProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    if (!theme) return;
+
     const root = window.document.documentElement;
     // TODO: Extract property + values to static structure and pull in here
     root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
