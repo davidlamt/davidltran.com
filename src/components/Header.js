@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { useThemeProvider } from '../hooks';
+import { ThemeToggle } from './';
 
 const HeaderContainer = styled.header`
   align-items: center;
@@ -70,11 +70,6 @@ NavLink.propTypes = {
 };
 
 const Header = () => {
-  const { theme, setTheme } = useThemeProvider();
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
-
   return (
     <HeaderContainer>
       <HeaderName to="/">David Tran</HeaderName>
@@ -90,7 +85,7 @@ const Header = () => {
             <NavLink to="/experience">Experience</NavLink>
           </li>
           <li>
-            <button onClick={toggleTheme}>Theme</button>
+            <ThemeToggle />
           </li>
         </ul>
       </MainNavigation>
