@@ -1,6 +1,8 @@
 import React, { createContext, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+import colors, { INITIAL_THEME_CSS_PROP, THEME_KEY } from '../data/colors';
+
 export const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
@@ -8,14 +10,15 @@ const ThemeProvider = ({ children }) => {
 
   function setTheme(newTheme) {
     setRawTheme(newTheme);
-    // TODO: Use constant for theme here and in getInitiaColorMode.js
-    localStorage.setItem('theme', newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
   }
 
   useEffect(() => {
     const root = window.document.documentElement;
 
-    const initialColorValue = root.style.getPropertyValue('--initial-theme');
+    const initialColorValue = root.style.getPropertyValue(
+      INITIAL_THEME_CSS_PROP
+    );
 
     setRawTheme(initialColorValue);
   }, []);
@@ -24,36 +27,12 @@ const ThemeProvider = ({ children }) => {
     if (!theme) return;
 
     const root = window.document.documentElement;
-    // TODO: Extract property + values to static structure and pull in here
-    root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
-    root.style.setProperty(
-      '--color-background',
-      theme === 'light' ? '#fff' : '#1e1e1e'
-    );
-    root.style.setProperty(
-      '--link-color',
-      theme === 'light' ? '#0984e3' : '#3398e6'
-    );
-    root.style.setProperty(
-      '--item-hover-color',
-      theme === 'light' ? '#f5f5f5' : '#333'
-    );
-    root.style.setProperty(
-      '--footer-item-hover-color',
-      theme === 'light' ? '#333' : '#fff'
-    );
-    root.style.setProperty(
-      '--experience-date-background',
-      theme === 'light' ? '#f5f5f5' : '#333'
-    );
-    root.style.setProperty(
-      '--experience-line-color',
-      theme === 'light' ? '#d9dee7' : '#333'
-    );
-    root.style.setProperty(
-      '--experience-diamond-color',
-      theme === 'light' ? '#333' : '#9e9e9e'
-    );
+
+    Object.entries(colors).forEach(([name, colorByTheme]) => {
+      const cssVarName = `--color-${name}`;
+
+      root.style.setProperty(cssVarName, colorByTheme[theme]);
+    });
   }, [theme]);
 
   return (

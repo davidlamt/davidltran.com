@@ -46,7 +46,7 @@ const MainNavigation = styled.nav`
         transition: background-color 0.2s linear;
 
         &:hover {
-          background-color: var(--item-hover-color);
+          background-color: var(--color-item-hover);
           text-decoration: none;
         }
       }
@@ -55,7 +55,7 @@ const MainNavigation = styled.nav`
 `;
 
 const ActiveLinkStyle = {
-  backgroundColor: 'var(--item-hover-color)',
+  backgroundColor: 'var(--color-item-hover)',
 };
 
 const NavLink = ({ children, to }) => (

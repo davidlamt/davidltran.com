@@ -48,8 +48,8 @@ const MainNavigation = styled.nav`
 
         :active,
         :hover {
-          color: var(--footer-item-hover-color);
-          border-bottom: 1px solid var(--footer-item-hover-color);
+          color: var(--color-secondary-item-hover);
+          border-bottom: 1px solid var(--color-secondary-item-hover);
         }
       }
     }

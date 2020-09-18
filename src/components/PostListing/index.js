@@ -16,7 +16,7 @@ const PostListingContainer = styled(Link)`
   width: 100%;
 
   &:hover {
-    background-color: var(--item-hover-color);
+    background-color: var(--color-item-hover);
     text-decoration: none;
   }
 `;

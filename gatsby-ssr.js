@@ -6,67 +6,68 @@
 
 import React from 'react';
 
-const SetInitialTheme = () => {
-  const codeToRunOnClient = `
-(function() {
+import colors, {
+  DARK,
+  INITIAL_THEME_CSS_PROP,
+  LIGHT,
+  THEME_KEY,
+} from './src/data/colors';
+
+const PLACEHOLDERS = {
+  COLORS: "'__REPLACE_COLORS__'",
+  DARK: '__REPLACE_DARK__',
+  INITIAL_THEME_CSS_PROP: '__REPLACE_INITIAL_THEME_CSS_PROP__',
+  LIGHT: '__REPLACE_LIGHT__',
+  THEME_KEY: '__REPLACE_THEME_KEY__',
+};
+
+const setColorsByTheme = () => {
+  const colors = '__REPLACE_COLORS__';
+  const dark = '__REPLACE_DARK__';
+  const initialThemeCssProp = '__REPLACE_INITIAL_THEME_CSS_PROP__';
+  const light = '__REPLACE_LIGHT__';
+  const themeKey = '__REPLACE_THEME_KEY__';
+
   function getInitialTheme() {
-    const persistedColorPreference = window.localStorage.getItem('theme');
+    const persistedColorPreference = window.localStorage.getItem(themeKey);
     const hasPersistedPreference = typeof persistedColorPreference === 'string';
-  
-    // If the user has explicitly chosen light or dark,
-    // let's use it. Otherwise, this value will be null.
+
     if (hasPersistedPreference) {
       return persistedColorPreference;
     }
-  
-    // If they haven't been explicit, let's check the media query
+
     const mql = window.matchMedia('(prefers-color-scheme: dark)');
     const hasMediaQueryPreference = typeof mql.matches === 'boolean';
     if (hasMediaQueryPreference) {
-      return mql.matches ? 'dark' : 'light';
+      return mql.matches ? dark : light;
     }
-  
-    // If they are using a browser/OS that doesn't support
-    // color themes, let's default to 'light'.
-    return 'light';
+
+    return light;
   }
 
   const theme = getInitialTheme();
 
   const root = window.document.documentElement;
-  root.style.setProperty('--color-text', theme === 'light' ? '#333' : '#fff');
-  root.style.setProperty(
-    '--color-background',
-    theme === 'light' ? '#fff' : '#1e1e1e'
-  );
-  root.style.setProperty(
-    '--link-color',
-    theme === 'light' ? '#0984e3' : '#3398e6'
-  );
-  root.style.setProperty(
-    '--item-hover-color',
-    theme === 'light' ? '#f5f5f5' : '#333'
-  );
-  root.style.setProperty(
-    '--footer-item-hover-color',
-    theme === 'light' ? '#333' : '#fff'
-  );
-  root.style.setProperty(
-    '--experience-date-background',
-    theme === 'light' ? '#f5f5f5' : '#333'
-  );
-  root.style.setProperty(
-    '--experience-line-color',
-    theme === 'light' ? '#d9dee7' : '#333'
-  );
-  root.style.setProperty(
-    '--experience-diamond-color',
-    theme === 'light' ? '#333' : '#9e9e9e'
-  );
 
-  root.style.setProperty('--initial-theme', theme);
-})()
-  `;
+  Object.entries(colors).forEach(([name, colorByTheme]) => {
+    const cssVarName = `--color-${name}`;
+
+    root.style.setProperty(cssVarName, colorByTheme[theme]);
+  });
+
+  root.style.setProperty(initialThemeCssProp, theme);
+};
+
+const SetInitialTheme = () => {
+  const functionStr = String(setColorsByTheme)
+    .replace(PLACEHOLDERS.COLORS, JSON.stringify(colors))
+    .replace(PLACEHOLDERS.DARK, DARK)
+    .replace(PLACEHOLDERS.INITIAL_THEME_CSS_PROP, INITIAL_THEME_CSS_PROP)
+    .replace(PLACEHOLDERS.LIGHT, LIGHT)
+    .replace(PLACEHOLDERS.THEME_KEY, THEME_KEY);
+
+  const codeToRunOnClient = `(${functionStr})()`;
+
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
 
