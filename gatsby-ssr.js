@@ -71,6 +71,20 @@ const SetInitialTheme = () => {
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
 
-export const onRenderBody = ({ setPreBodyComponents }) => {
+const FallbackStyles = () => {
+  const cssVarStr = Object.entries(colors).reduce(
+    (acc, [name, colorByTheme]) => {
+      return `${acc}\n--color-${name}: ${colorByTheme[LIGHT]};`;
+    },
+    ''
+  );
+
+  const wrappedInSelector = `html { ${cssVarStr} }`;
+
+  return <style>{wrappedInSelector}</style>;
+};
+
+export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
+  setHeadComponents(<FallbackStyles />);
   setPreBodyComponents(<SetInitialTheme />);
 };
