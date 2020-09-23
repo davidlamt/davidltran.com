@@ -5,6 +5,9 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import App from './src/components/App';
 
 import colors, {
   DARK,
@@ -87,4 +90,12 @@ const FallbackStyles = () => {
 export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
   setHeadComponents(<FallbackStyles />);
   setPreBodyComponents(<SetInitialTheme />);
+};
+
+export const wrapRootElement = ({ element }) => {
+  return <App>{element}</App>;
+};
+
+wrapRootElement.propTypes = {
+  element: PropTypes.node,
 };
