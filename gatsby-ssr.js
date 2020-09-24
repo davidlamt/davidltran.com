@@ -87,9 +87,21 @@ const FallbackStyles = () => {
   return <style>{wrappedInSelector}</style>;
 };
 
-export const onRenderBody = ({ setHeadComponents, setPreBodyComponents }) => {
+const BodyAttributes = {
+  style: {
+    backgroundColor: 'var(--color-background)',
+    color: 'var(--color-text)',
+  },
+};
+
+export const onRenderBody = ({
+  setBodyAttributes,
+  setHeadComponents,
+  setPreBodyComponents,
+}) => {
   setHeadComponents(<FallbackStyles />);
   setPreBodyComponents(<SetInitialTheme />);
+  setBodyAttributes(BodyAttributes);
 };
 
 export const wrapRootElement = ({ element }) => {
