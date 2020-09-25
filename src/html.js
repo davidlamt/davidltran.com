@@ -15,7 +15,7 @@ export default function HTML(props) {
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        <noscript>This site runs best with JavaScript enabled.</noscript>
+        <noscript>This site works best with JavaScript enabled.</noscript>
         <div
           key={`body`}
           id="___gatsby"

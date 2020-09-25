@@ -7,7 +7,7 @@ import { Tag } from '../';
 
 const PostListingContainer = styled(Link)`
   border-radius: 5px;
-  color: #333;
+  color: var(--color-text);
   display: block;
   margin-left: -10px;
   padding: 10px;
@@ -16,7 +16,7 @@ const PostListingContainer = styled(Link)`
   width: 100%;
 
   &:hover {
-    background-color: #f5f5f5;
+    background-color: var(--color-item-hover);
     text-decoration: none;
   }
 `;

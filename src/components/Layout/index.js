@@ -6,8 +6,6 @@ import styled from 'styled-components';
 import { Footer, Header } from '../';
 import './index.css';
 
-require('prismjs/themes/prism-okaidia.css');
-
 const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,6 +19,10 @@ const Content = styled.div`
   margin: 0 auto;
   width: 100%;
   flex: 1;
+
+  .anchor svg {
+    fill: var(--color-text);
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
