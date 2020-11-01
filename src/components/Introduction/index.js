@@ -29,7 +29,8 @@ const Introduction = () => (
 
     <p>
       When I am not glued to a computer screen, you can find me enjoying food,
-      exercising, reading, and traveling. I am a lifelong learner, an avid{' '}
+      exercising, reading, and traveling. I am a{' '}
+      <a href="https://til.davidltran.com">lifelong learner</a>, an avid{' '}
       <Link to="/blog/podcasts-to-listen-to-in-2018/">podcast listener</Link>,
       and an enthusiast of books of all genres.
     </p>
