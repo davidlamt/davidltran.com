@@ -22,7 +22,7 @@ const Introduction = () => (
     <h1>👋 Hey there, I&#39;m David!</h1>
 
     <p>
-      I am currently tackling interesting problems as a Web Developer at{' '}
+      I am currently tackling interesting problems as a Senior Web Engineer at{' '}
       <a href="https://tigerconnect.com/">TigerConnect</a>, a company developing
       secure communication platforms for the healthcare industry.
     </p>

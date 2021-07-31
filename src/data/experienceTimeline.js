@@ -10,7 +10,7 @@ const experienceTimeline = [
     companyName: 'TigerConnect',
     CompanyLogo: TigerConnectLogo,
     companyUrl: 'https://tigerconnect.com/',
-    title: 'Web Developer',
+    title: 'Senior Web Engineer',
     description:
       'Helping improve patient outcomes with better communication systems.',
     tags: ['javascript', 'mobx', 'react', 'typescript'],
