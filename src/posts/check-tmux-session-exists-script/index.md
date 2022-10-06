@@ -17,10 +17,8 @@ We can check if the session already exists before creating one. If a session alr
 session="workspace"
 
 # Check if the session exists, discarding output
-# We can check $? for the exit status (zero for success, non-zero for failure)
-tmux has-session -t $session 2>/dev/null
-
-if [ $? != 0 ]; then
+# "if" statements use the exit status of a program
+if tmux has-session -t $session 2>/dev/null; then
   # Set up your session
 fi
 
